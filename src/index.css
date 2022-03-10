@@ -1,13 +1,431 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-image: url(../public/images/background-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  font-family: "Lato", sans-serif;
+}
+.s1 {
+  max-width: 75%;
+  font-size: 24px;
+}
+.s2 {
+  max-width: 75%;
+  font-size: 18px;
+}
+.s3 {
+  max-width: 90%;
+  font-size: 20px;
+}
+a {
+  color: #585858;
+}
+a:hover {
+  color: black;
+}
+/* Navigation bar */
+
+.logo-wrapper {
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo-wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-wrapper {
+  background-color: #c8c3cc;
+  border-radius: 5px;
+}
+.navbar-items-wrapper {
+  display: flex;
+  text-align: center;
+  border-right: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  width: fit-content;
+}
+.navbar-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2%; */
+  padding-right: 1vw;
+  padding-top: 0.5vw;
+  padding-bottom: 0.5vw;
+  padding-left: 1vw;
+  /*font-size: 100%;*/
+  width: 10vw;
+  border-right: 1px solid gray;
+}
+.navbar-item-wrapper a {
+  color: #563f46;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.navbar-item-wrapper a:hover {
+  color: rgb(116, 111, 111);
+}
+.donate-button a {
+  padding: 1.1vw 1.5vw 1.1vw 1.5vw;
+  font-size: 1.5em;
+}
+.profile-pic {
+  max-width: 100%;
+  border-radius: 100%;
+}
+.about-me-header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-right: 4%;
+}
+
+/* SIDE BAR */
+.sidebar-wrapper {
+  background-color: #8ca3a3;
+  position: relative;
+  padding-left: 0.5vw;
+  border-radius: 5px;
+}
+.sidebar {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidebar a,
+.dropdown-btn,
+.sidebar-header {
+  text-decoration: none;
+  font-size: 1.1vw;
+  color: #444343;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+.sidebar-header {
+  font-size: 18px;
+}
+.sidebar-header:hover {
+  cursor: auto;
+}
+.dropdown-container a {
+  text-decoration: none;
+  color: #585858;
+  padding-left: 0.6vw;
+  padding-right: 0.6vw;
+  padding-bottom: 5px;
+  font-size: 1vw;
+}
+.dropdown-items-container {
+  padding-bottom: 16px;
+}
+
+/* On mouse-over */
+.sidebar button:hover,
+.dropdown-container a:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: block;
+}
+.dropdown-container ul {
+  list-style-type: none;
+}
+
+/* Optional: Style the caret down icon */
+.fas-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Welcome text */
+.welcome-message h1 {
+  font-size: 34px;
+}
+.welcome-message h2 {
+  font-size: 24px;
+}
+
+/* Page grid content */
+.page-grid-items-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.page-grid-item-wrapper {
+  position: relative;
+  margin: 1%;
+}
+.page-grid-item-img-background {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  filter: brightness(75%);
+}
+.page-grid-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.page-grid-text-wrapper .page-grid-subtitle-wrapper {
+  transition: 1s;
+  font-weight: 600;
+  color: transparent;
+}
+.page-grid-text-wrapper:hover .page-grid-subtitle-wrapper {
+  transition: 1s;
+  color: white;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.img-darken {
+  transition: 1s;
+  filter: brightness(50%);
+}
+
+.d1 {
+  max-width: 25vw;
+  border: 1px solid gray;
+  margin-top: 15px;
+}
+
+.next {
+  float: right;
+  padding-right: 1vw;
+}
+.next1 {
+  position: absolute;
+  padding-right: 2vw;
+  bottom: 0;
+  right: 0;
+}
+.next a {
+  text-decoration: none;
+}
+
+.chord-table table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  max-width: fit-content;
+  background-color: #d6d6d6;
+  width: 75%;
+}
+
+.chord-table td,
+th {
+  border: 1px solid black;
+  padding: 0.5vw;
+  width: 15vw;
+  font-size: 1em;
+}
+
+.prog-table table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: #d6d6d6;
+}
+.prog-table td,
+th {
+  border: 1px solid black;
+  padding: 0.5vw;
+  width: 20vw;
+  font-size: 20px;
+}
+
+.chord-table th {
+  background-color: #c2c0c0;
+  max-width: fit-content;
+}
+
+.prog-table td {
+  width: 200px;
+  max-width: fit-content;
+}
+
+.chord-prog-diagram img {
+  max-width: 10vw;
+}
+
+#interval-table th {
+  font-size: 0.8em;
+}
+#interval-table td {
+  font-size: 0.8em;
+  padding: 0.2vw;
+  text-align: center;
+}
+.key-selector {
+  padding-top: 16px;
+  /* text-align: center; */
+}
+
+.key-selector button {
+  width: 50px;
+  /*height: 30px; */
+}
+
+.chord-sheet {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+.chord-sheet img {
+  width: 70%;
+  height: 80%;
+}
+
+.model-box {
+  width: 560px;
+  height: 315px;
+  padding-top: 0%; /* This is your aspect ratio */
+  margin-bottom: 0%;
+}
+.model {
+  width: 560px;
+  height: 315px;
+}
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+  .container {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: small;
+  }
+  .sidebar-wrapper {
+    display: none;
+  }
+
+  .page-wrapper {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .sidebar-content-wrapper {
+    grid-template-columns: 100%;
+  }
+
+  .content-wrapper {
+    margin-left: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    max-width: fit-content;
+    max-width: 94%;
+  }
+
+  .chord-table td,
+  th {
+    font-size: 2vw;
+  }
+  .prog-table td,
+  th {
+    font-size: 2vw;
+  }
+}
+
+/* Smart Phone */
+@media only screen and (max-width: 700px) {
+  .model-box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 66.6%; /* This is your aspect ratio */
+    margin-bottom: 0%;
+  }
+  .model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .chord-prog-diagram img {
+    max-width: 25vw;
+  }
+  .welcome-message h1 {
+    font-size: 6vw;
+  }
+  .welcome-message h2 {
+    font-size: 4vw;
+  }
+  .s1 {
+    font-size: 4vw;
+    max-width: 100%;
+  }
+  .s2 {
+    font-size: 3vw;
+    max-width: 100%;
+  }
+  .s3 {
+    font-size: 3.2vw;
+    max-width: 90%;
+  }
+  .navbar-item-wrapper {
+    font-size: 3vw;
+    padding: 1vw;
+  }
+  .page-grid-item-img-background {
+    height: 20vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    filter: brightness(75%);
+  }
+
+  .chord-table td,
+  th {
+    font-size: 3vw;
+  }
+  .prog-table td,
+  th {
+    font-size: 3vw;
+  }
+
+  .logo-wrapper img {
+    max-width: 40%;
+  }
 }
