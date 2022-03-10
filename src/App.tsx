@@ -10,6 +10,11 @@ import Notes from "./Scenes/Basics/Notes";
 import Scales from "./Scenes/Basics/Scales";
 import ChordsIntervals from "./Scenes/Basics/ChordIntervals";
 import ChordProgressions from "./Scenes/Basics/ChordProgressions";
+import BarreChords from "./Scenes/Chords/BarreChords";
+import Chords from "./Scenes/Chords/Chords";
+import ChordSheets from "./Scenes/Chords/ChordSheets";
+import OpenChords from "./Scenes/Chords/OpenChords";
+import PowerChords from "./Scenes/Chords/PowerChords";
 
 const Container = styled.div`
   margin-left: 5%;
@@ -58,6 +63,11 @@ function App() {
                 path="/basics/chord-progressions"
                 element={<ChordProgressions />}
               />
+              <Route path="/chords" element={<Chords />} />
+              <Route path="/chords/open-chords" element={<OpenChords />} />
+              <Route path="/chords/barre-chords" element={<BarreChords />} />
+              <Route path="/chords/power-chords" element={<PowerChords />} />
+              <Route path="/chords/chord-sheets" element={<ChordSheets />} />
             </Routes>
           </Router>
         </ContentWrapper>
