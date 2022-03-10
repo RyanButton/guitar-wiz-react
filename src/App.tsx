@@ -7,6 +7,9 @@ import Basics from "./Scenes/Basics/Basics";
 import Intro from "./Scenes/Basics/Intro";
 import styled from "styled-components";
 import Notes from "./Scenes/Basics/Notes";
+import Scales from "./Scenes/Basics/Scales";
+import ChordsIntervals from "./Scenes/Basics/ChordIntervals";
+import ChordProgressions from "./Scenes/Basics/ChordProgressions";
 
 const Container = styled.div`
   margin-left: 5%;
@@ -44,10 +47,17 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/basics" element={<Basics />} />
+              <Route path="/basics/notes" element={<Intro />} />
               <Route path="/basics/notes" element={<Notes />} />
-              {/* <Route path="/basics/scales" element={<Scales />} />
-              <Route path="/basics/chords-intervals" element={<ChordsIntervals />} />
-              <Route path="/basics/chord-progressions" element={<ChordProgressions />} /> */}
+              <Route path="/basics/scales" element={<Scales />} />
+              <Route
+                path="/basics/chords-intervals"
+                element={<ChordsIntervals />}
+              />
+              <Route
+                path="/basics/chord-progressions"
+                element={<ChordProgressions />}
+              />
             </Routes>
           </Router>
         </ContentWrapper>
