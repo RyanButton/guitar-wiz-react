@@ -15,6 +15,9 @@ import Chords from "./Scenes/Chords/Chords";
 import ChordSheets from "./Scenes/Chords/ChordSheets";
 import OpenChords from "./Scenes/Chords/OpenChords";
 import PowerChords from "./Scenes/Chords/PowerChords";
+import ChordsInKey from "./Scenes/ChordsInKey/ChordsInKey";
+import ChordsInMajor from "./Scenes/ChordsInKey/ChordsInMajor";
+import ChordsInMinor from "./Scenes/ChordsInKey/ChordsInMinor";
 
 const Container = styled.div`
   margin-left: 5%;
@@ -68,6 +71,15 @@ function App() {
               <Route path="/chords/barre-chords" element={<BarreChords />} />
               <Route path="/chords/power-chords" element={<PowerChords />} />
               <Route path="/chords/chord-sheets" element={<ChordSheets />} />
+              <Route path="/chords-in-key" element={<ChordsInKey />} />
+              <Route
+                path="/chords-in-key/chords-in-major"
+                element={<ChordsInMajor />}
+              />
+              <Route
+                path="/chords-in-key/chords-in-minor"
+                element={<ChordsInMinor />}
+              />
             </Routes>
           </Router>
         </ContentWrapper>
