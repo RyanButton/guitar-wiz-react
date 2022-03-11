@@ -21,8 +21,7 @@ function BarreChords() {
         As you have gathered you play a barre chord by <i>barring</i> the fret
         (and doing other fancy stuff with those pretty little fingers of yours).
         Only two things matter when playing barre chords: the <i>shape</i> and
-        the
-        <i>postion</i> you play it. The shape determines what type of barre
+        the <i>position</i> you play it. The shape determines what type of barre
         chord you are playing (e.g major, minor) and the position determines the
         pitch of the chord. We will start by playing an F major barre chord on
         the first fret.
@@ -106,7 +105,7 @@ function BarreChords() {
       </p>
       <p className="s2">
         Head on over to our <a href="/chords-in-key">Chords in Key</a> section
-        if you want to learn more about chord progressions, or to our
+        if you want to learn more about chord progressions, or to our{" "}
         <a href="/chords/chord-sheets">Chord Sheets</a> section to learn to play
         more chords.
       </p>

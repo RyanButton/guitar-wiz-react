@@ -1,69 +1,92 @@
+import IntervalTable from "../../Components/Tables/IntervalTable";
+
 function ChordsIntervals() {
   return (
     <div>
-      <h1>Scales</h1>
+      <h1>Chords and Intervals</h1>
 
-      <h2 className="s1">Introducing Scales</h2>
+      <h2 className="s1">Chords Intro</h2>
       <p className="s2">
-        Scales are collections of notes that begin with a root note and sync
-        harmoniously. The two most common scales are the <em>major scale</em>{" "}
-        and
-        <em>minor scale.</em> These two scales are therefore the two most common
-        <em>keys</em> in music (major key and minor key).
+        Chords are multiple notes played at one time. The most common chord
+        types are <em>major chords</em> and <em>minor chords</em>. The vast
+        majority of music you hear on the radio will consist of a combination of
+        major and minor chords. Even though major and minor chords are insanely
+        popular, you will definitely benefit from learning other chord types
+        such as diminished chords.
+      </p>
+      <p className="s2">
+        In order to really understand chords, first you will need to learn about{" "}
+        <strong>intervals.</strong>
       </p>
 
-      <h2 className="s1">Scale Degree</h2>
+      <h2 className="s1">Intervals</h2>
       <p className="s2">
-        The idea of measuring the distance of notes in a scale is known as the
-        <strong>scale degree</strong>. The scale degree of a note is simply it's
-        place in that scale. E.g the third note in a scale is equivalent to the
-        third scale degree. This is the foundation of the key in a music and the
-        roman numeral analysis found in
-        <a href="/basics/chord-progressions">chord progressions.</a>
+        Intervals in music theory can be thought of as the relationship between
+        two notes. You may recall from the <a href="/notes">notes</a> section
+        the concept of a <em>tone</em> and <em>semitone</em>. Well these are the
+        most commonly spoken about intervals, and are also known as a{" "}
+        <em>major second</em> and <em>minor second</em> respectively.
+      </p>
+      <p className="s2">
+        Intervals are generally referring to distances between notes on a scale.
+        For example, a minor third is the distance between the first and third
+        note in a minor scale (with the exception of the so called 'perfect'
+        intervals I, IV, V, octave).
+      </p>
+      <p className="s2">
+        The table below shows each interval and their common abbreviations.
       </p>
 
-      <h2 className="s1">Major Scale</h2>
+      <IntervalTable />
+
+      <h2 className="s1">Chords</h2>
       <p className="s2">
-        The major scale is probably the most used scale in music, followed by
-        the minor scale. It is generally associated with feelings of happiness
-        and tends to portray those feelings. It's Tone/Semitone formula is T T S
-        T T T S (see
-        <a href="basics/chords-intervals">Chords and Intervals</a> for more info
-        on tones and semitones). Below is the scale diagram for a G major scale,
-        have a go at playing it (start slow!)
+        At a fundamental level, chords are built using intervals and scale
+        degrees. For example, a major chord is a triad that consists of the 1st,
+        3rd, and 5th, scale degrees of the major scale. All chords are built off
+        of some combination of intervals and scale degrees.
       </p>
+
+      <h3>Major Triad</h3>
+      <p className="s2">
+        The major triad consists of three notes of the major scale. Below is a G
+        major chord. Notice how it only consists of three notes G, B, and D.
+        These are the 1st, 3rd, and 5th degrees of the{" "}
+        <strong>G major scale</strong>. To learn more about scales, considering
+        heading over to our <a href="/scales">scales page</a>.
+      </p>
+
       <img
-        className="d1"
-        src="/images/scales/major.png"
-        alt="Major scale"
-        style={{ maxWidth: "50%" }}
+        src="/images/chord-diagrams/G-with-notes.png"
+        alt="G"
+        style={{ maxWidth: "40vw" }}
       />
-
-      <h2 className="s1">Minor Scale</h2>
       <p className="s2">
-        The minor scale is a more moody and solemn scale than the major, and is
-        a great contrast to the major. It is used frequently in many forms of
-        music. It's Tone/Semitone formula is T S T T S T T (see
-        <a href="basics/chords-intervals">Chords and Intervals</a> for more
-        info). Below is the scale diagram for a F# minor scale.
-      </p>
-      <img
-        className="d1"
-        src="/images/scales/minor.png"
-        alt="Minor scale"
-        style={{ maxWidth: "50%" }}
-      />
-
-      <h2 className="s1">Other scale types</h2>
-      <p className="s2">
-        There are many different scales out there, such as the pentatonic scale
-        or the blues scale, all with their unique sound and feel. Head over to
-        our
-        <a href="/scales">Scales page</a> to learn more scales.
+        This concept of a major triad applies to any major scale. For example,
+        to play an A major scale, play the 1st, 3rd, and 5th scale degrees of
+        the A major scale (A, D♭, E). If you know the scale, you can play the
+        chord.
       </p>
 
+      <h3>Minor Triad</h3>
+      <p className="s2">
+        Minor triads are identical to major triads in that they are the 1st,
+        2nd, and 3rd degrees in the scale. However where they differ is in the
+        <em>scale</em> they are playing. As you can tell, this scale is the{" "}
+        <strong>minor scale</strong>. So to play a G minor chord, play the 1st,
+        3rd, and 5th degrees of the G minor scale G, B♭, E.
+      </p>
+
+      <h2 className="s1">Other chord types</h2>
+      <p className="s2">
+        There are many different chord types including, diminished, augmented,
+        major 7th, minor 7th, etc. However the two most important chords to know
+        are the major triad and the minor triad. These two are absolutely
+        fundamental to majority of music out there. Feel free to get your feet
+        wet in other chord types and spice your music up!
+      </p>
       <p className="next">
-        Up next <a href="/basics/chords-intervals">Chords and Intervals</a>
+        Up next <a href="/basics/chord-progressions">Chord progressions</a>
       </p>
     </div>
   );

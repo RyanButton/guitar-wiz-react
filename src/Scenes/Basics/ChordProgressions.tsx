@@ -7,7 +7,7 @@ function ChordProgressions() {
 
       <h2 className="s1">Intro to progressions</h2>
       <p className="s2">
-        Chord progressions are sequences of chords that belong to a given
+        Chord progressions are sequences of chords that belong to a given{" "}
         <strong>key.</strong> You can think of a key as a set of notes/chords
         that
         <em>stem</em> from a parent note. The key generally follows a major or
@@ -27,10 +27,9 @@ function ChordProgressions() {
         of the same scale.
       </p>
       <p className="s2">
-        Below is the <strong>roman numeral diagram</strong> for the key of
-        <strong>C Major</strong>
-        with 'I' being the first note and 'VII' being the last note in the
-        scale.
+        Below is the <strong>roman numeral diagram</strong> for the key of{" "}
+        <strong>C Major</strong> with 'I' being the first note and 'VII' being
+        the last note in the scale.
       </p>
       <CMajorTable />
       <p className="s2">
@@ -48,9 +47,9 @@ function ChordProgressions() {
       <p className="s2">
         The I-IV-V progression is ubiquitous across many styles of music. From
         blues to rock to pop one-four-fives are everywhere. As you've seen from
-        the diagram above, the chords for a one-four-five in C Major are
-        <em>C major, F major, and G major.</em>
-        Below are the chord diagrams, have a go a playing them!
+        the diagram above, the chords for a one-four-five in C Major are{" "}
+        <em>C major, F major, and G major.</em> Below are the chord diagrams,
+        have a go a playing them!
       </p>
 
       <div className="chord-prog-diagram">
@@ -73,7 +72,7 @@ function ChordProgressions() {
         There are of course many different chord progressions in many different
         keys. That's part of what makes music so interesting. There are an
         infinite different combinations of chords across all twelve keys. If you
-        want to learn more chord progressions in different keys have a look at
+        want to learn more chord progressions in different keys have a look at{" "}
         <a href="/chords-in-key">Chords in Key section.</a>
       </p>
     </div>

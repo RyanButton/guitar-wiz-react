@@ -342,15 +342,7 @@ th {
   }
 
   .sidebar-content-wrapper {
-    grid-template-columns: 100%;
-  }
-
-  .content-wrapper {
-    margin-left: 0%;
-    padding-left: 3%;
-    padding-right: 3%;
-    max-width: fit-content;
-    max-width: 94%;
+    display: block;
   }
 
   .chord-table td,

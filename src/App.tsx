@@ -18,6 +18,15 @@ import PowerChords from "./Scenes/Chords/PowerChords";
 import ChordsInKey from "./Scenes/ChordsInKey/ChordsInKey";
 import ChordsInMajor from "./Scenes/ChordsInKey/ChordsInMajor";
 import ChordsInMinor from "./Scenes/ChordsInKey/ChordsInMinor";
+import BluesScale from "./Scenes/Scales/BluesScale";
+import MajorScale from "./Scenes/Scales/MajorScale";
+import MinorScale from "./Scenes/Scales/MinorScale";
+import PentatonicScale from "./Scenes/Scales/PentatonicScale";
+import ExerciseOne from "./Scenes/Tips/ExerciseOne";
+import GettingInTune from "./Scenes/Tips/GettingInTune";
+import Maintenance from "./Scenes/Tips/Maintenance";
+import Tips from "./Scenes/Tips/Tips";
+import ScalesHome from "./Scenes/Scales/ScalesHome";
 
 const Container = styled.div`
   margin-left: 5%;
@@ -41,6 +50,14 @@ const ContentWrapper = styled.div`
   padding-left: 1%;
   padding-right: 1%;
   min-height: 800px;
+  @media only screen and (max-width: 1000px) {
+    margin-left: 0%;
+    padding-left: 3%;
+    padding-right: 3%;
+    max-width: fit-content;
+    min-width: 94%;
+    max-width: 94%;
+  }
 `;
 
 function App() {
@@ -55,7 +72,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/basics" element={<Basics />} />
-              <Route path="/basics/notes" element={<Intro />} />
+              <Route path="/basics/intro" element={<Intro />} />
               <Route path="/basics/notes" element={<Notes />} />
               <Route path="/basics/scales" element={<Scales />} />
               <Route
@@ -80,6 +97,21 @@ function App() {
                 path="/chords-in-key/chords-in-minor"
                 element={<ChordsInMinor />}
               />
+              <Route path="/scales" element={<ScalesHome />} />
+              <Route
+                path="/scales/pentatonic-scale"
+                element={<PentatonicScale />}
+              />
+              <Route path="/scales/blues-scale" element={<BluesScale />} />
+              <Route path="/scales/major-scale" element={<MajorScale />} />
+              <Route path="/scales/minor-scale" element={<MinorScale />} />
+              <Route path="/tips" element={<Tips />} />
+              <Route path="/tips/getting-in-tune" element={<GettingInTune />} />
+              <Route
+                path="/tips/guitar-maintenance"
+                element={<Maintenance />}
+              />
+              <Route path="/tips/1234-exercise" element={<ExerciseOne />} />
             </Routes>
           </Router>
         </ContentWrapper>
