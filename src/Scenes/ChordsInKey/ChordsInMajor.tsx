@@ -1,6 +1,9 @@
-import MajorTable from "../../Components/Tables/MajorTable";
+import { useState } from "react";
+import ChordKeyTable from "../../Components/Tables/ChordKeyTable";
+import MajorChords from "./MajorChords";
 
 function ChordsinMajor() {
+  const [key, setKey] = useState<string>("C");
   return (
     <div>
       <div>
@@ -19,38 +22,27 @@ function ChordsinMajor() {
         </li>
       </ul>
 
-      <MajorTable />
+      <ChordKeyTable keyStr={key} />
 
-      <h2>Common chord progressions:</h2>
-      <div className="chord-table-wrapper">
-        <div className="prog-table">
-          <table id="prog-table">
-            <tr>
-              <th>Roman Numerals</th>
-              <th>Chords</th>
-            </tr>
-            <tr>
-              <td>I - IV - V</td>
-              <td>Cmaj - Fmaj - Gmaj</td>
-            </tr>
-            <tr>
-              <td>I - VI - IV - V</td>
-              <td>Cmaj - Amin - Fmaj - Gmaj</td>
-            </tr>
-            <tr>
-              <td>II - V - I</td>
-              <td>Dmin - Gmaj - Cmaj</td>
-            </tr>
-          </table>
-        </div>
-      </div>
+      <button onClick={() => setKey("C")}>C</button>
+      <button onClick={() => setKey("Db")}>C#/Db</button>
+      <button onClick={() => setKey("D")}>D</button>
+      <button onClick={() => setKey("Eb")}>D#/Eb</button>
+      <button onClick={() => setKey("E")}>E</button>
+      <button onClick={() => setKey("F")}>F</button>
+      <button onClick={() => setKey("Gb")}>F#/Gb</button>
+      <button onClick={() => setKey("G")}>G</button>
+      <button onClick={() => setKey("Ab")}>G#/Ab</button>
+      <button onClick={() => setKey("A")}>A</button>
+      <button onClick={() => setKey("Bb")}>A#/Bb</button>
+      <button onClick={() => setKey("B")}>B</button>
+
+      <MajorChords keyStr={key} />
 
       <div className="s2">
         <h3 style={{ marginBottom: "0px" }}>Other keys:</h3>
         <a href="/chords-in-key/chords-in-minor">Chords in minor key</a>
       </div>
-
-      <script src="/scripts/chord-table.js"></script>
     </div>
   );
 }

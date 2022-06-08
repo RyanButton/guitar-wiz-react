@@ -27,6 +27,7 @@ import GettingInTune from "./Scenes/Tips/GettingInTune";
 import Maintenance from "./Scenes/Tips/Maintenance";
 import Tips from "./Scenes/Tips/Tips";
 import ScalesHome from "./Scenes/Scales/ScalesHome";
+import Interact from "./Scenes/Interact/Interact";
 
 const Container = styled.div`
   margin-left: 5%;
@@ -112,6 +113,7 @@ function App() {
                 element={<Maintenance />}
               />
               <Route path="/tips/1234-exercise" element={<ExerciseOne />} />
+              <Route path="/interact" element={<Interact />} />
             </Routes>
           </Router>
         </ContentWrapper>

@@ -1,6 +1,9 @@
-import MinorTable from "../../Components/Tables/MinorTable";
+import { useState } from "react";
+import ChordKeyTable from "../../Components/Tables/ChordKeyTable";
+import MinorChords from "./MinorChords";
 
 function ChordsInMinor() {
+  const [key, setKey] = useState<string>("Cm");
   return (
     <div>
       <div>
@@ -19,44 +22,27 @@ function ChordsInMinor() {
         </li>
       </ul>
 
-      <MinorTable />
+      <ChordKeyTable keyStr={key} />
 
-      <h2>Common chord progressions:</h2>
-      <div className="prog-table">
-        <table id="prog-table">
-          <tr>
-            <th>Roman Numerals</th>
-            <th>Chords</th>
-          </tr>
-          <tr>
-            <td>i - VI - VII</td>
-            <td>Cmin - Abmaj - Bbmaj</td>
-          </tr>
-          <tr>
-            <td>i - iv - VII</td>
-            <td>Cmin - Fmin - Bbmaj</td>
-          </tr>
-          <tr>
-            <td>i - iv - v</td>
-            <td>Cmin - Fmin - Gmin</td>
-          </tr>
-          <tr>
-            <td>i - VI - III - VII</td>
-            <td>Cmin - Abmaj - Ebmaj - Bbmaj</td>
-          </tr>
-          <tr>
-            <td>ii - v - i</td>
-            <td>Ddim - Gmin - Cmin</td>
-          </tr>
-        </table>
-      </div>
+      <button onClick={() => setKey("Cm")}>C</button>
+      <button onClick={() => setKey("Dbm")}>C#/Db</button>
+      <button onClick={() => setKey("Dm")}>D</button>
+      <button onClick={() => setKey("Ebm")}>D#/Eb</button>
+      <button onClick={() => setKey("Em")}>E</button>
+      <button onClick={() => setKey("Fm")}>F</button>
+      <button onClick={() => setKey("Gbm")}>F#/Gb</button>
+      <button onClick={() => setKey("Gm")}>G</button>
+      <button onClick={() => setKey("Abm")}>G3/Ab</button>
+      <button onClick={() => setKey("Am")}>A</button>
+      <button onClick={() => setKey("Bbm")}>A#/Bb</button>
+      <button onClick={() => setKey("Bm")}>B</button>
+
+      <MinorChords keyStr={key} />
 
       <div className="s2">
         <h3 style={{ marginBottom: "0px" }}>Other keys:</h3>
         <a href="/chords-in-key/chords-in-major">Chords in major key</a>
       </div>
-
-      <script src="/scripts/chord-table.js"></script>
     </div>
   );
 }

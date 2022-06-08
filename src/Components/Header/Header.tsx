@@ -35,6 +35,10 @@ function Header() {
           <div className="navbar-item-wrapper">
             <a href="/about">About</a>
           </div>
+
+          <div className="navbar-item-wrapper">
+            <a href="/interact">Interact</a>
+          </div>
         </div>
       </div>
     </div>

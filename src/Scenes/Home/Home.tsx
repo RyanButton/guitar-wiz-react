@@ -132,20 +132,6 @@ function Home() {
       <p className="s2" style={{ float: "right" }}>
         © 2022 Guitar Wiz
       </p>
-
-      {/* <script>
-    const pageGridItems = document.querySelectorAll(".page-grid-item-wrapper");
-  
-    pageGridItems.forEach((pageGridItem) => {
-      pageGridItem.addEventListener("mouseover", () => {
-        pageGridItem.children[0].classList.add("img-darken");
-      });
-  
-      pageGridItem.addEventListener("mouseout", () => {
-        pageGridItem.children[0].classList.remove("img-darken");
-      });
-    });
-  </script> */}
     </>
   );
 }
