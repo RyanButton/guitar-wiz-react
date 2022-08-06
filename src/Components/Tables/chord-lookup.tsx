@@ -1,4 +1,4 @@
-export const chordLookup = {
+export const chordLookup: Record<string, any> = {
   C: [
     ["Cmaj", "Dmin", "Emin", "Fmaj", "Gmaj", "Amin", "Bdim"],
     ["Cmaj7", "Dmin7", "Emin7", "Fmaj7", "G7", "Amin7", "Bm7b5"],
@@ -24,8 +24,8 @@ export const chordLookup = {
     ["Fmaj7", "Gmin7", "Amin7", "Bbmaj7", "C7", "Dmin7", "Em7b5"],
   ],
   Gb: [
-    ["Gbmaj", "Abmin", "Bbmin", "Cbmaj", "Dbmaj", "Ebmin", "Fdim"],
-    ["Gbmaj7", "Abmin7", "Bbmin7", "Cbmaj7", "Db7", "Ebmin7", "Fm7b5"],
+    ["Gbmaj", "Abmin", "Bbmin", "Bmaj", "Dbmaj", "Ebmin", "Fdim"],
+    ["Gbmaj7", "Abmin7", "Bbmin7", "Bmaj7", "Db7", "Ebmin7", "Fm7b5"],
   ],
   G: [
     ["Gmaj", "Amin", "Bmin", "Cmaj", "Dmaj", "Emin", "F#dim"],
@@ -60,8 +60,8 @@ export const chordLookup = {
     ["Dmin7", "Em7b5", "Fmaj7", "Gmin7", "Amin7", "Bbmaj7", "C7"],
   ],
   Ebm: [
-    ["Ebmin", "Fdim", "Gbmaj", "Abmin", "Bbmin", "Cbmaj", "Dbmaj"],
-    ["Ebmin7", "Fm7b5", "Gbmaj7", "Abmin7", "Bbmin7", "Cbmaj7", "Db7"],
+    ["Ebmin", "Fdim", "Gbmaj", "Abmin", "Bbmin", "Bmaj", "Dbmaj"],
+    ["Ebmin7", "Fm7b5", "Gbmaj7", "Abmin7", "Bbmin7", "Bmaj7", "Db7"],
   ],
   Em: [
     ["Emin", "F#dim	", "Gmaj", "Amin", "Bmin", "Cmaj", "Dmaj"],
@@ -80,8 +80,8 @@ export const chordLookup = {
     ["Gmin7", "Am7b5", "Bbmaj7", "Cmin7", "Dmin7", "Ebmaj7", "F7"],
   ],
   Abm: [
-    ["Abmin", "Bbdim", "Cbmaj", "Dbmin", "Ebmin", "Fbmaj", "Gbmaj"],
-    ["Abmin7", "Bbm7b5", "Cbmaj7", "Dbmin7", "Ebmin7", "Fbmaj7", "Gb7"],
+    ["Abmin", "Bbdim", "Bmaj", "Dbmin", "Ebmin", "Fbmaj", "Gbmaj"],
+    ["Abmin7", "Bbm7b5", "Bmaj7", "Dbmin7", "Ebmin7", "Fbmaj7", "Gb7"],
   ],
   Am: [
     ["Amin", "Bdim", "Cmaj", "Dmin", "Emin", "Fmaj", "Gmaj"],

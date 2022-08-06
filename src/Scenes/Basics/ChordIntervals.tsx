@@ -1,4 +1,4 @@
-import IntervalTable from "../../Components/Tables/IntervalTable";
+import IntervalTable from "../../components/Tables/IntervalTable";
 
 function ChordsIntervals() {
   return (

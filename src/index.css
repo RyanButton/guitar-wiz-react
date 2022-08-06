@@ -23,52 +23,6 @@ a {
 a:hover {
   color: black;
 }
-/* Navigation bar */
-
-.logo-wrapper {
-  border-radius: 5px;
-  background-color: white;
-  margin-bottom: 5px;
-}
-
-.logo-wrapper img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navbar-wrapper {
-  background-color: #c8c3cc;
-  border-radius: 5px;
-}
-.navbar-items-wrapper {
-  display: flex;
-  text-align: center;
-  border-right: 1px solid transparent;
-  transition: border-bottom 0.5s;
-  width: fit-content;
-}
-.navbar-item-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* padding: 2%; */
-  padding-right: 1vw;
-  padding-top: 0.5vw;
-  padding-bottom: 0.5vw;
-  padding-left: 1vw;
-  /*font-size: 100%;*/
-  width: 10vw;
-  border-right: 1px solid gray;
-}
-.navbar-item-wrapper a {
-  color: #563f46;
-  text-decoration: none;
-  transition: color 0.5s;
-}
-.navbar-item-wrapper a:hover {
-  color: rgb(116, 111, 111);
-}
 .donate-button a {
   padding: 1.1vw 1.5vw 1.1vw 1.5vw;
   font-size: 1.5em;
@@ -326,11 +280,6 @@ th {
 
 /* Tablet */
 @media only screen and (max-width: 1000px) {
-  .container {
-    margin-left: 0%;
-    margin-right: 0%;
-    font-size: small;
-  }
   .sidebar-wrapper {
     display: none;
   }
@@ -347,7 +296,7 @@ th {
 
   .chord-table td,
   th {
-    font-size: 2vw;
+    font-size: 2.5vw;
   }
   .prog-table td,
   th {
@@ -410,14 +359,10 @@ th {
 
   .chord-table td,
   th {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .prog-table td,
   th {
     font-size: 3vw;
-  }
-
-  .logo-wrapper img {
-    max-width: 40%;
   }
 }

@@ -1,7 +1,15 @@
+import getKeySuffix from "../../utils/get-key-suffix";
 import { chordLookup } from "./chord-lookup";
 
-export default function ChordKeyTable({ keyStr }: { keyStr: string }) {
-  const chords = chordLookup[keyStr as keyof typeof chordLookup];
+export default function ChordKeyTable({
+  keyStr,
+  keyType,
+}: {
+  keyStr: string;
+  keyType: string;
+}) {
+  const keySuffix = getKeySuffix(keyType);
+  const chords = chordLookup[(keyStr + keySuffix) as keyof typeof chordLookup];
   return (
     <div className="chord-table-wrapper">
       <div className="chord-table">

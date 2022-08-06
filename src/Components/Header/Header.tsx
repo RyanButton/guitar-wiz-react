@@ -1,46 +1,33 @@
+import NavBar from "./NavBar";
+import styled from "styled-components";
+
+const LogoWrapper = styled.div`
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 5px;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media only screen and (max-width: 700px) {
+    img {
+      max-width: 60%;
+    }
+  }
+`;
+
 function Header() {
   return (
     <div className="header-wrapper">
-      <div className="logo-wrapper">
+      <LogoWrapper>
         <a href="/">
           <img src="/images/logo3.png" alt="Guitar Wiz" />
         </a>
-      </div>
-      <div className="navbar-wrapper">
-        <div className="navbar-items-wrapper">
-          <div className="navbar-item-wrapper">
-            <a href="/">Home</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/basics">Basics</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/chords">Chords</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/chords-in-key">Chords in Key</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/scales">Scales</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/tips">Tips</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/about">About</a>
-          </div>
-
-          <div className="navbar-item-wrapper">
-            <a href="/interact">Interact</a>
-          </div>
-        </div>
-      </div>
+      </LogoWrapper>
+      <NavBar />
     </div>
   );
 }

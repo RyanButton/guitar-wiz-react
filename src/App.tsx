@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header/Header";
-import SideBar from "./Components/SideBar/SideBar";
+import Header from "./components/Header/Header";
+import SideBar from "./components/SideBar/SideBar";
 import About from "./Scenes/About/About";
 import Home from "./Scenes/Home/Home";
 import Basics from "./Scenes/Basics/Basics";
@@ -16,8 +16,7 @@ import ChordSheets from "./Scenes/Chords/ChordSheets";
 import OpenChords from "./Scenes/Chords/OpenChords";
 import PowerChords from "./Scenes/Chords/PowerChords";
 import ChordsInKey from "./Scenes/ChordsInKey/ChordsInKey";
-import ChordsInMajor from "./Scenes/ChordsInKey/ChordsInMajor";
-import ChordsInMinor from "./Scenes/ChordsInKey/ChordsInMinor";
+import ChordsInMajor from "./Scenes/ChordsInKey/ChordsInKey";
 import BluesScale from "./Scenes/Scales/BluesScale";
 import MajorScale from "./Scenes/Scales/MajorScale";
 import MinorScale from "./Scenes/Scales/MinorScale";
@@ -27,7 +26,6 @@ import GettingInTune from "./Scenes/Tips/GettingInTune";
 import Maintenance from "./Scenes/Tips/Maintenance";
 import Tips from "./Scenes/Tips/Tips";
 import ScalesHome from "./Scenes/Scales/ScalesHome";
-import Interact from "./Scenes/Interact/Interact";
 
 const Container = styled.div`
   margin-left: 5%;
@@ -35,12 +33,21 @@ const Container = styled.div`
   background-color: #2c2b24;
   padding: 10px;
   border-radius: 5px;
+
+  @media only screen and (max-width: 1000px) {
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: small;
+  }
 `;
 
 const SideBarContentWrapper = styled.div`
   margin-top: 15px;
   display: grid;
   grid-template-columns: 12% 88%;
+  @media only screen and (max-width: 1000px) {
+    grid-template-columns: 100%;
+  }
 `;
 
 const ContentWrapper = styled.div`
@@ -90,14 +97,6 @@ function App() {
               <Route path="/chords/power-chords" element={<PowerChords />} />
               <Route path="/chords/chord-sheets" element={<ChordSheets />} />
               <Route path="/chords-in-key" element={<ChordsInKey />} />
-              <Route
-                path="/chords-in-key/chords-in-major"
-                element={<ChordsInMajor />}
-              />
-              <Route
-                path="/chords-in-key/chords-in-minor"
-                element={<ChordsInMinor />}
-              />
               <Route path="/scales" element={<ScalesHome />} />
               <Route
                 path="/scales/pentatonic-scale"
@@ -113,7 +112,6 @@ function App() {
                 element={<Maintenance />}
               />
               <Route path="/tips/1234-exercise" element={<ExerciseOne />} />
-              <Route path="/interact" element={<Interact />} />
             </Routes>
           </Router>
         </ContentWrapper>

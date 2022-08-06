@@ -1,7 +1,7 @@
-import { chordLookup } from "../../Components/Tables/chord-lookup";
+import { chordLookup } from "../../components/Tables/chord-lookup";
 
 export default function MinorChords({ keyStr }: { keyStr: string }) {
-  const chords = chordLookup[keyStr as keyof typeof chordLookup];
+  const chords = chordLookup[(keyStr + "m") as keyof typeof chordLookup];
   return (
     <>
       <h2>Common chord progressions:</h2>

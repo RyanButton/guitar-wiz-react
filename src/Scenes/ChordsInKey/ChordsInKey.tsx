@@ -1,40 +1,101 @@
-function ChordsInKey() {
+import React from "react";
+import ChordKeyTable from "../../components/Tables/ChordKeyTable";
+import InteractiveGuitar from "./components/InteractiveGuitar";
+import MajorChords from "./MajorChords";
+import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
+import MinorChords from "./MinorChords";
+
+const BUTTON_HEIGHT = "40px";
+const KEY_BUTTON_WIDTH = "100px";
+const TYPE_BUTTON_WIDTH = "100px";
+
+function ChordsinKey() {
+  const [key, setKey] = React.useState<string>("C");
+  const [keyType, setKeyType] = React.useState<string>("Major");
+
   return (
     <div>
       <div>
         <h1>Chords in Key</h1>
-        <h2>The "key" to playing great</h2>
-        <p className="s1">
-          Learn what chords belong to each key and discover the power of chord
-          progressions. Each key is very similar to one another, especially the
-          major and minor key. The only really difference between the major and
-          minor key is <em>where you start.</em>. For example, the key of C
-          major has the exact same chords as the key of A minor (in a different
-          order). This is known as the relative minor.
-        </p>
-        <p className="s1">Learn more about chords in key below.</p>
       </div>
 
-      <div>
-        <a href="/chords-in-key/chords-in-major">
-          <h3>Chords in major key</h3>
-        </a>
-        <p>
-          The major key is the most common, and is commonly seen as the
-          'happiest' sounding of keys.
-        </p>
+      <p className="s2">
+        The following chart presents all common chords in key. The position on
+        the scale is determined by roman numerals. Be sure to select your
+        desired key.
+      </p>
+
+      <ul>
+        <li>
+          <b>{keyType} chord sequence:</b>
+          {keyType === "Major" && "Maj Min Min Maj Maj Min Dim"}
+          {keyType === "Minor" && "Min Dim Maj Min Min Maj Maj"}
+        </li>
+      </ul>
+
+      <FormControl>
+        <InputLabel id="note-label">Key</InputLabel>
+        <Select
+          style={{
+            textTransform: "none",
+            maxWidth: KEY_BUTTON_WIDTH,
+            maxHeight: BUTTON_HEIGHT,
+            minWidth: KEY_BUTTON_WIDTH,
+            minHeight: BUTTON_HEIGHT,
+          }}
+          labelId="note-label"
+          id="select-note-label"
+          value={key}
+          label="key"
+          onChange={(event) => setKey(event.target.value)}
+        >
+          <MenuItem value={"C"}>C</MenuItem>
+          <MenuItem value={"Db"}>C#/Db</MenuItem>
+          <MenuItem value={"D"}>D</MenuItem>
+          <MenuItem value={"Eb"}>D#/Eb</MenuItem>
+          <MenuItem value={"E"}>E</MenuItem>
+          <MenuItem value={"F"}>F</MenuItem>
+          <MenuItem value={"Gb"}>F#/Gb</MenuItem>
+          <MenuItem value={"G"}>G</MenuItem>
+          <MenuItem value={"Ab"}>Ab</MenuItem>
+          <MenuItem value={"A"}>A</MenuItem>
+          <MenuItem value={"Bb"}>A#/Bb</MenuItem>
+          <MenuItem value={"B"}>B</MenuItem>
+        </Select>
+      </FormControl>
+
+      <FormControl>
+        <InputLabel id="type-label">Type</InputLabel>
+        <Select
+          style={{
+            maxWidth: TYPE_BUTTON_WIDTH,
+            maxHeight: BUTTON_HEIGHT,
+            minWidth: TYPE_BUTTON_WIDTH,
+            minHeight: BUTTON_HEIGHT,
+          }}
+          labelId="type-label"
+          id="select-type-label"
+          value={keyType}
+          label="type"
+          onChange={(event) => setKeyType(event.target.value)}
+        >
+          <MenuItem value={"Major"}>Major</MenuItem>
+          <MenuItem value={"Minor"}>Minor</MenuItem>
+        </Select>
+      </FormControl>
+
+      <div style={{ marginTop: "0.5em" }}>
+        <ChordKeyTable keyStr={key} keyType={keyType} />
       </div>
-      <div>
-        <a href="/chords-in-key/chords-in-minor">
-          <h3>Chords in minor key</h3>
-        </a>
-        <p>
-          Another very common key. The minor key is loved for it's deep and
-          moody sound.
-        </p>
+
+      <InteractiveGuitar keyStr={key} keyType={keyType} />
+
+      <div style={{ marginBottom: "2em" }}>
+        {keyType === "Major" && <MajorChords keyStr={key} />}
+        {keyType === "Minor" && <MinorChords keyStr={key} />}
       </div>
     </div>
   );
 }
 
-export default ChordsInKey;
+export default ChordsinKey;
