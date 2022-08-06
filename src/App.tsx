@@ -16,7 +16,6 @@ import ChordSheets from "./Scenes/Chords/ChordSheets";
 import OpenChords from "./Scenes/Chords/OpenChords";
 import PowerChords from "./Scenes/Chords/PowerChords";
 import ChordsInKey from "./Scenes/ChordsInKey/ChordsInKey";
-import ChordsInMajor from "./Scenes/ChordsInKey/ChordsInKey";
 import BluesScale from "./Scenes/Scales/BluesScale";
 import MajorScale from "./Scenes/Scales/MajorScale";
 import MinorScale from "./Scenes/Scales/MinorScale";

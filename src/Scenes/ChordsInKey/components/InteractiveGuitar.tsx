@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import Guitar, { getRenderFingerSpn } from "react-guitar";
 import { standard } from "react-guitar-tunings";
-import useSound, { StringInstrument, withSoundFont } from "react-guitar-sound";
+import useSound from "react-guitar-sound";
 import styled from "styled-components";
 import { Button } from "@mui/material";
 import { VolumeOff, VolumeUp } from "@mui/icons-material";
