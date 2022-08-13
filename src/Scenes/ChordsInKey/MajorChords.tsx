@@ -1,4 +1,4 @@
-import { chordLookup } from "../../components/Tables/chord-lookup";
+import { chordLookup } from "../../Components/Tables/chord-lookup";
 
 export default function MajorChords({ keyStr }: { keyStr: string }) {
   const chords = chordLookup[keyStr as keyof typeof chordLookup];

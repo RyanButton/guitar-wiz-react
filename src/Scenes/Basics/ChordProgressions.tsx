@@ -1,4 +1,4 @@
-import CMajorTable from "../../components/Tables/CMajorTable";
+import CMajorTable from "../../Components/Tables/CMajorTable";
 
 function ChordProgressions() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
-import ChordKeyTable from "../../components/Tables/ChordKeyTable";
-import InteractiveGuitar from "./components/InteractiveGuitar";
+import ChordKeyTable from "../../Components/Tables/ChordKeyTable";
+import InteractiveGuitar from "./Components/InteractiveGuitar";
 import MajorChords from "./MajorChords";
 import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import MinorChords from "./MinorChords";

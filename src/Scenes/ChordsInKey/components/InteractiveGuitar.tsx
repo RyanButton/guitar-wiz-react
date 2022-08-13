@@ -5,7 +5,7 @@ import useSound from "react-guitar-sound";
 import styled from "styled-components";
 import { Button } from "@mui/material";
 import { VolumeOff, VolumeUp } from "@mui/icons-material";
-import { chordLookup as keyLookup } from "../../../components/Tables/chord-lookup";
+import { chordLookup as keyLookup } from "../../../Components/Tables/chord-lookup";
 import { chordLookup } from "./chord-lookup";
 import getKeySuffix from "../../../utils/get-key-suffix";
 
