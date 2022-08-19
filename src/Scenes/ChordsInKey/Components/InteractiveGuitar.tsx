@@ -24,6 +24,7 @@ export default function InteractiveGuitar({
 }) {
   const [strings, setStrings] = useState<number[]>([0, 0, 0, 0, 0, 0]);
   const [muted, setMuted] = useState(false);
+  const firstRender = useRef(true);
 
   const { strum } = useSound({
     fretting: strings,
@@ -32,9 +33,30 @@ export default function InteractiveGuitar({
   });
 
   useEffect(() => {
+    if (firstRender.current) {
+      return;
+    }
+
     setTimeout(strum, 200);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [strings]);
+
+  const handleChordClick = useCallback(
+    (chord: number[]) => {
+      if (
+        chord.every((item) => strings.includes(item)) &&
+        strings.every((item) => chord.includes(item))
+      ) {
+        setTimeout(strum, 200);
+      } else {
+        setStrings(chord);
+        if (firstRender.current) {
+          firstRender.current = false;
+        }
+      }
+    },
+    [strings, strum]
+  );
 
   const chordsInKey = useMemo(() => {
     const chords =
@@ -78,7 +100,7 @@ export default function InteractiveGuitar({
                 variant="contained"
                 color="inherit"
                 onClick={() => {
-                  setStrings(chord[Object.keys(chord)[0]]);
+                  handleChordClick(chord[Object.keys(chord)[0]]);
                 }}
               >
                 {Object.keys(chord)[0]}
