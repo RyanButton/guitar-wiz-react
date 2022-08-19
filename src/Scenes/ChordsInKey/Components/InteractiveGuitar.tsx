@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useCallback } from "react";
 import Guitar, { getRenderFingerSpn } from "react-guitar";
 import { standard } from "react-guitar-tunings";
 import useSound from "react-guitar-sound";
@@ -23,7 +23,6 @@ export default function InteractiveGuitar({
   keyType: string;
 }) {
   const [strings, setStrings] = useState<number[]>([0, 0, 0, 0, 0, 0]);
-  const [playSound, setPlaySound] = useState(false);
   const [muted, setMuted] = useState(false);
 
   const { strum } = useSound({
@@ -33,11 +32,19 @@ export default function InteractiveGuitar({
   });
 
   useEffect(() => {
-    if (playSound) {
-      strum();
-      setPlaySound(false);
-    }
-  }, [playSound, strum]);
+    strum();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [strings]);
+
+  const handleChordClick = useCallback(
+    (chord: number[]) => {
+      chord.every((item) => strings.includes(item)) &&
+      strings.every((item) => chord.includes(item))
+        ? strum()
+        : setStrings(chord);
+    },
+    [strings, strum]
+  );
 
   const chordsInKey = useMemo(() => {
     const chords =
@@ -67,7 +74,6 @@ export default function InteractiveGuitar({
         <Guitar
           strings={strings}
           renderFinger={getRenderFingerSpn(standard)}
-          onChange={setStrings}
           center
         />
       </GuitarWrapper>
@@ -82,8 +88,7 @@ export default function InteractiveGuitar({
                 variant="contained"
                 color="inherit"
                 onClick={() => {
-                  setStrings(chord[Object.keys(chord)[0]]);
-                  setPlaySound(true);
+                  handleChordClick(chord[Object.keys(chord)[0]]);
                 }}
               >
                 {Object.keys(chord)[0]}
