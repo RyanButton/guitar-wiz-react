@@ -26,7 +26,7 @@ export default function InteractiveGuitar({
   const [playSound, setPlaySound] = useState(false);
   const [muted, setMuted] = useState(false);
 
-  const { play, strum } = useSound({
+  const { strum } = useSound({
     fretting: strings,
     tuning: standard,
     muted,
@@ -67,7 +67,6 @@ export default function InteractiveGuitar({
         <Guitar
           strings={strings}
           renderFinger={getRenderFingerSpn(standard)}
-          onPlay={play}
           onChange={setStrings}
           center
         />
