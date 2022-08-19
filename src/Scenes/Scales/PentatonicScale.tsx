@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PentatonicScale() {
   return (
     <div>
@@ -62,7 +64,7 @@ function PentatonicScale() {
       </p>
 
       <p className="next">
-        Up next <a href="/scales/blues-scale">Blues scale</a>
+        Up next <Link to="/scales/blues-scale">Blues scale</Link>
       </p>
     </div>
   );

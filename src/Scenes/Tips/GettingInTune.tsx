@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function GettingInTune() {
   return (
     <div>
@@ -31,7 +33,7 @@ function GettingInTune() {
       </p>
 
       <p className="next">
-        Up next <a href="/tips/guitar-maintenance">Guitar Maintenance</a>
+        Up next <Link to="/tips/guitar-maintenance">Guitar Maintenance</Link>
       </p>
     </div>
   );

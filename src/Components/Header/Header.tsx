@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LogoWrapper = styled.div`
   border-radius: 5px;
@@ -23,9 +24,9 @@ function Header() {
   return (
     <div className="header-wrapper">
       <LogoWrapper>
-        <a href="/">
+        <Link to="/">
           <img src="/images/logo3.png" alt="Guitar Wiz" />
-        </a>
+        </Link>
       </LogoWrapper>
       <NavBar />
     </div>

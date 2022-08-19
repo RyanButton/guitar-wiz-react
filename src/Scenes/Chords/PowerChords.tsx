@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function PowerChords() {
   return (
     <div>
@@ -59,7 +61,7 @@ function PowerChords() {
       </p>
 
       <p className="next">
-        Up next <a href="/chords/chord-sheets">Chord Sheets</a>
+        Up next <Link to="/chords/chord-sheets">Chord Sheets</Link>
       </p>
       <br />
     </div>

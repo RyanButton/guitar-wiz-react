@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Scales() {
   return (
     <div>
@@ -19,7 +21,7 @@ function Scales() {
         place in that scale. E.g the third note in a scale is equivalent to the
         third scale degree. This is the foundation of the key in a music and the
         roman numeral analysis found in{" "}
-        <a href="/basics/chord-progressions">chord progressions.</a>
+        <Link to="/basics/chord-progressions">chord progressions.</Link>
       </p>
 
       <h2 className="s1">Major Scale</h2>
@@ -27,9 +29,10 @@ function Scales() {
         The major scale is probably the most used scale in music, followed by
         the minor scale. It is generally associated with feelings of happiness
         and tends to portray those feelings. It's Tone/Semitone formula is T T S
-        T T T S (see <a href="basics/chords-intervals">Chords and Intervals</a>{" "}
-        for more info on tones and semitones). Below is the scale diagram for a
-        G major scale, have a go at playing it (start slow!)
+        T T T S (see{" "}
+        <Link to="/basics/chords-intervals">Chords and Intervals</Link> for more
+        info on tones and semitones). Below is the scale diagram for a G major
+        scale, have a go at playing it (start slow!)
       </p>
       <img
         className="d1"
@@ -43,7 +46,7 @@ function Scales() {
         The minor scale is a more moody and solemn scale than the major, and is
         a great contrast to the major. It is used frequently in many forms of
         music. It's Tone/Semitone formula is T S T T S T T (see{" "}
-        <a href="basics/chords-intervals">Chords and Intervals</a> for more
+        <Link to="/basics/chords-intervals">Chords and Intervals</Link> for more
         info). Below is the scale diagram for a F# minor scale.
       </p>
       <img
@@ -57,11 +60,11 @@ function Scales() {
       <p className="s2">
         There are many different scales out there, such as the pentatonic scale
         or the blues scale, all with their unique sound and feel. Head over to
-        our <a href="/scales">Scales page</a> to learn more scales.
+        our <Link to="/scales">Scales page</Link> to learn more scales.
       </p>
 
       <p className="next">
-        Up next <a href="/basics/chords-intervals">Chords and Intervals</a>
+        Up next <Link to="/basics/chords-intervals">Chords and Intervals</Link>
       </p>
     </div>
   );

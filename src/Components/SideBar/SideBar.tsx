@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function SideBar() {
   return (
     <div className="sidebar-wrapper">
@@ -7,70 +9,68 @@ function SideBar() {
         </div>
 
         <div className="dropdown-items-container">
-          <button className="dropdown-btn">
+          <div className="dropdown-btn">
             Basics
             <i className="fas fa-caret-down"></i>
-          </button>
+          </div>
           <div className="dropdown-container">
-            <a href="/basics">-Basics</a>
-            <a href="/basics/intro">-Intro to Guitar</a>
-            <a href="/basics/notes">-Notes</a>
-            <a href="/basics/scales">-Scales</a>
-            <a href="/basics/chords-intervals">-Chords & Intervals</a>
-            <a href="/basics/chord-progressions">-Chord progressions</a>
+            <Link to="/basics">-Basics</Link>
+            <Link to="/basics/intro">-Intro to Guitar</Link>
+            <Link to="/basics/notes">-Notes</Link>
+            <Link to="/basics/scales">-Scales</Link>
+            <Link to="/basics/chords-intervals">-Chords & Intervals</Link>
+            <Link to="/basics/chord-progressions">-Chord progressions</Link>
           </div>
         </div>
 
         <div className="dropdown-items-container">
-          <button className="dropdown-btn">
+          <div className="dropdown-btn">
             Chords
             <i className="fas fa-caret-down"></i>
-          </button>
+          </div>
           <div className="dropdown-container">
-            <a href="/chords">-Chords</a>
-            <a href="/chords/open-chords">-Open Chords</a>
-            <a href="/chords/barre-chords">-Barre Chords</a>
-            <a href="/chords/power-chords">-Power Chords</a>
-            <a href="/chords/chord-sheets">-Chord Sheets</a>
+            <Link to="/chords">-Chords</Link>
+            <Link to="/chords/open-chords">-Open Chords</Link>
+            <Link to="/chords/barre-chords">-Barre Chords</Link>
+            <Link to="/chords/power-chords">-Power Chords</Link>
+            <Link to="/chords/chord-sheets">-Chord Sheets</Link>
           </div>
         </div>
 
         <div className="dropdown-items-container">
-          <button className="dropdown-btn">
+          <div className="dropdown-btn">
             Chords in Key
             <i className="fas fa-caret-down"></i>
-          </button>
+          </div>
           <div className="dropdown-container">
-            <a href="/chords-in-key">-Chords In Key</a>
-            <a href="/chords-in-key/chords-in-major">-Chords in Major</a>
-            <a href="/chords-in-key/chords-in-minor">-Chords in Minor</a>
+            <Link to="/chords-in-key">-Chords In Key</Link>
           </div>
         </div>
 
         <div className="dropdown-items-container">
-          <button className="dropdown-btn">
+          <div className="dropdown-btn">
             Scales
             <i className="fas fa-caret-down"></i>
-          </button>
+          </div>
           <div className="dropdown-container">
-            <a href="/scales">-Scales</a>
-            <a href="/scales/major-scale">-Major Scale</a>
-            <a href="/scales/minor-scale">-Minor Scale</a>
-            <a href="/scales/pentatonic-scale">-Pentatonic Scale</a>
-            <a href="/scales/blues-scale">-Blues Scale</a>
+            <Link to="/scales">-Scales</Link>
+            <Link to="/scales/major-scale">-Major Scale</Link>
+            <Link to="/scales/minor-scale">-Minor Scale</Link>
+            <Link to="/scales/pentatonic-scale">-Pentatonic Scale</Link>
+            <Link to="/scales/blues-scale">-Blues Scale</Link>
           </div>
         </div>
 
         <div className="dropdown-items-container">
-          <button className="dropdown-btn">
+          <div className="dropdown-btn">
             Tips
             <i className="fas fa-caret-down"></i>
-          </button>
+          </div>
           <div className="dropdown-container">
-            <a href="/tips">-Tips</a>
-            <a href="/tips/getting-in-tune">-Getting in tune</a>
-            <a href="/tips/guitar-maintenance">-Guitar maintenance</a>
-            <a href="/tips/1234-exercise">-1/2/3/4 exercise</a>
+            <Link to="/tips">-Tips</Link>
+            <Link to="/tips/getting-in-tune">-Getting in tune</Link>
+            <Link to="/tips/guitar-maintenance">-Guitar maintenance</Link>
+            <Link to="/tips/1234-exercise">-1/2/3/4 exercise</Link>
           </div>
         </div>
       </div>

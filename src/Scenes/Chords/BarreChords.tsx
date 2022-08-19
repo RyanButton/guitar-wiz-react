@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function BarreChords() {
   return (
     <div>
@@ -104,14 +106,14 @@ function BarreChords() {
         where it is played.
       </p>
       <p className="s2">
-        Head on over to our <a href="/chords-in-key">Chords in Key</a> section
-        if you want to learn more about chord progressions, or to our{" "}
-        <a href="/chords/chord-sheets">Chord Sheets</a> section to learn to play
-        more chords.
+        Head on over to our <Link to="/chords-in-key">Chords in Key</Link>{" "}
+        section if you want to learn more about chord progressions, or to our{" "}
+        <Link to="/chords/chord-sheets">Chord Sheets</Link> section to learn to
+        play more chords.
       </p>
 
       <p className="next">
-        Up next <a href="/chords/power-chords">Power chords</a>
+        Up next <Link to="/chords/power-chords">Power chords</Link>
       </p>
       <br />
     </div>

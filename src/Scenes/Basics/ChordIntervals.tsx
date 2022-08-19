@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import IntervalTable from "../../Components/Tables/IntervalTable";
 
 function ChordsIntervals() {
@@ -22,9 +23,9 @@ function ChordsIntervals() {
       <h2 className="s1">Intervals</h2>
       <p className="s2">
         Intervals in music theory can be thought of as the relationship between
-        two notes. You may recall from the <a href="/notes">notes</a> section
-        the concept of a <em>tone</em> and <em>semitone</em>. Well these are the
-        most commonly spoken about intervals, and are also known as a{" "}
+        two notes. You may recall from the <Link to="/notes">notes</Link>{" "}
+        section the concept of a <em>tone</em> and <em>semitone</em>. Well these
+        are the most commonly spoken about intervals, and are also known as a{" "}
         <em>major second</em> and <em>minor second</em> respectively.
       </p>
       <p className="s2">
@@ -53,7 +54,7 @@ function ChordsIntervals() {
         major chord. Notice how it only consists of three notes G, B, and D.
         These are the 1st, 3rd, and 5th degrees of the{" "}
         <strong>G major scale</strong>. To learn more about scales, considering
-        heading over to our <a href="/scales">scales page</a>.
+        heading over to our <Link to="/scales">scales page</Link>.
       </p>
 
       <img
@@ -86,7 +87,7 @@ function ChordsIntervals() {
         wet in other chord types and spice your music up!
       </p>
       <p className="next">
-        Up next <a href="/basics/chord-progressions">Chord progressions</a>
+        Up next <Link to="/basics/chord-progressions">Chord progressions</Link>
       </p>
     </div>
   );

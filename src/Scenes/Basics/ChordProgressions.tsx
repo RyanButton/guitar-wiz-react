@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import CMajorTable from "../../Components/Tables/CMajorTable";
 
 function ChordProgressions() {
@@ -73,7 +74,7 @@ function ChordProgressions() {
         keys. That's part of what makes music so interesting. There are an
         infinite different combinations of chords across all twelve keys. If you
         want to learn more chord progressions in different keys have a look at{" "}
-        <a href="/chords-in-key">Chords in Key section.</a>
+        <Link to="/chords-in-key">Chords in Key section.</Link>
       </p>
     </div>
   );

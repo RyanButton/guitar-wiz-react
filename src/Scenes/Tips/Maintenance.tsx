@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Maintenance() {
   return (
     <div>
@@ -66,7 +68,7 @@ function Maintenance() {
       </p>
 
       <p className="next">
-        Up next <a href="/tips/1234-exercise">1234 exercise</a>
+        Up next <Link to="/tips/1234-exercise">1234 exercise</Link>
       </p>
     </div>
   );

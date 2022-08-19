@@ -69,12 +69,12 @@ const ContentWrapper = styled.div`
 
 function App() {
   return (
-    <Container>
-      <Header />
-      <SideBarContentWrapper>
-        <SideBar />
-        <ContentWrapper>
-          <Router>
+    <Router>
+      <Container>
+        <Header />
+        <SideBarContentWrapper>
+          <SideBar />
+          <ContentWrapper>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
@@ -112,10 +112,10 @@ function App() {
               />
               <Route path="/tips/1234-exercise" element={<ExerciseOne />} />
             </Routes>
-          </Router>
-        </ContentWrapper>
-      </SideBarContentWrapper>
-    </Container>
+          </ContentWrapper>
+        </SideBarContentWrapper>
+      </Container>
+    </Router>
   );
 }
 

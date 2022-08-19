@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Basics() {
   return (
     <div>
@@ -14,39 +16,39 @@ function Basics() {
       </div>
 
       <div>
-        <a href="/basics/intro">
+        <Link to="/basics/intro">
           <h3>Introduction</h3>
-        </a>
+        </Link>
         <p>
           Get to your the parts of your guitar, the names of the strings (and
           how to remember them!)
         </p>
       </div>
       <div>
-        <a href="/basics/notes">
+        <Link to="/basics/notes">
           <h3>Notes</h3>
-        </a>
+        </Link>
         <p>Learn the notes on a guitar.</p>
       </div>
       <div>
-        <a href="/basics/scales">
+        <Link to="/basics/scales">
           <h3>Scales</h3>
-        </a>
+        </Link>
         <p>Scales and the basics of melody.</p>
       </div>
       <div>
-        <a href="/basics/chords-intervals">
+        <Link to="/basics/chords-intervals">
           <h3>Chords and Intervals</h3>
-        </a>
+        </Link>
         <p>
           Here an intro to chord (and intervals) is given, building on the
           knowledge of notes.
         </p>
       </div>
       <div>
-        <a href="/basics/chord-progressions">
+        <Link to="/basics/chord-progressions">
           <h3>Chord Progressions</h3>
-        </a>
+        </Link>
         <p>
           Learn how chords are used to build chord progressions, the foundation
           to a wealth of music.

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function OpenChords() {
   return (
     <div>
@@ -21,7 +23,7 @@ function OpenChords() {
         will see!). The diagram below is a common chord known as A Major. If
         you're completely new, don't worry what this means. You can just think
         of it as a name. If you would like to learn more about notes and scales
-        check out our <a href="/scales">Scales</a> section.
+        check out our <Link to="/scales">Scales</Link> section.
       </p>
 
       <p className="s2">
@@ -59,14 +61,14 @@ function OpenChords() {
       />
 
       <p className="s2">
-        Head on over to our <a href="/chords-in-key">Chords in Key</a> section
-        if you want to learn more about chord progressions, or to our{" "}
-        <a href="/chords/chord-sheets">Chord Sheets</a> section to learn to play
-        more chords.
+        Head on over to our <Link to="/chords-in-key">Chords in Key</Link>{" "}
+        section if you want to learn more about chord progressions, or to our{" "}
+        <Link to="/chords/chord-sheets">Chord Sheets</Link> section to learn to
+        play more chords.
       </p>
 
       <p className="next">
-        Up next <a href="/chords/barre-chords">Barre chords</a>
+        Up next <Link to="/chords/barre-chords">Barre chords</Link>
       </p>
       <br />
     </div>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Intro() {
   return (
     <div>
@@ -71,7 +73,7 @@ function Intro() {
         Say it over and over again, until it is burned into your memory :).
       </p>
       <p className="next">
-        Up next <a href="/basics/notes">Notes</a>
+        Up next <Link to="/basics/notes">Notes</Link>
       </p>
     </div>
   );

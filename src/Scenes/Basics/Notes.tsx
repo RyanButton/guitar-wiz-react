@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Notes() {
   return (
     <div>
@@ -71,7 +73,7 @@ function Notes() {
       <p className="s2">Have fun and happy noting.</p>
 
       <p className="next">
-        Up next <a href="/basics/scales">Scales</a>
+        Up next <Link to="/basics/scales">Scales</Link>
       </p>
     </div>
   );

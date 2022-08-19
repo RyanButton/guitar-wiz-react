@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MajorScale() {
   return (
     <div>
@@ -11,8 +13,8 @@ function MajorScale() {
         all time. Everything from Twinkle Twinkle Little Star to Darude's
         Sandstorm is played on a major scale. Like most scales it consists of
         seven notes. It's Tone/Semitone formula is T T S T T T S (see{" "}
-        <a href="basics/chords-intervals">Chords and Intervals</a> for more info
-        on tones and semitones).
+        <Link to="basics/chords-intervals">Chords and Intervals</Link> for more
+        info on tones and semitones).
       </p>
 
       <h2 className="s1">How to play a major scale</h2>
@@ -56,7 +58,7 @@ function MajorScale() {
       <p className="s2">And WALA! There you have it, the major scale!</p>
 
       <p className="next">
-        Up next <a href="/scales/minor-scale">Minor scale</a>
+        Up next <Link to="/scales/minor-scale">Minor scale</Link>
       </p>
     </div>
   );

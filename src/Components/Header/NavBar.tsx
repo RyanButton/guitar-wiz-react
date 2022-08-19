@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const NavBarWrapper = styled.div`
   display: flex;
@@ -38,31 +39,31 @@ export default function NavBar() {
   return (
     <NavBarWrapper>
       <NavBarItemWrapper>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </NavBarItemWrapper>
 
       <NavBarItemWrapper>
-        <a href="/basics">Basics</a>
+        <Link to="/basics">Basics</Link>
       </NavBarItemWrapper>
 
       <NavBarItemWrapper>
-        <a href="/chords">Chords</a>
+        <Link to="/chords">Chords</Link>
       </NavBarItemWrapper>
 
       <NavBarItemWrapper>
-        <a href="/chords-in-key">Chords in Key</a>
+        <Link to="/chords-in-key">Chords in Key</Link>
       </NavBarItemWrapper>
 
       <NavBarItemWrapper>
-        <a href="/scales">Scales</a>
+        <Link to="/scales">Scales</Link>
       </NavBarItemWrapper>
 
       <NavBarItemWrapper>
-        <a href="/tips">Tips</a>
+        <Link to="/tips">Tips</Link>
       </NavBarItemWrapper>
 
       <NavBarItemWrapper>
-        <a href="/about">About</a>
+        <Link to="/about">About</Link>
       </NavBarItemWrapper>
     </NavBarWrapper>
   );

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Scales() {
   return (
     <div>
@@ -9,34 +11,35 @@ function Scales() {
           shred licks without even thinking about all know their scales back to
           front. As well as this, you may have already noticed that chord in key
           follow a scale. For example,{" "}
-          <a href="/chords-in-key/chords-in-major">chords in major</a> follow a
-          major scale, and play a chord at every interval of this scale.
+          <Link to="/chords-in-key/chords-in-major">chords in major</Link>{" "}
+          follow a major scale, and play a chord at every interval of this
+          scale.
         </p>
         <p className="s2">Learn more about scales below.</p>
       </div>
 
       <div>
-        <a href="/scales/major-scale">
+        <Link to="/scales/major-scale">
           <h3>Major Scale</h3>
-        </a>
+        </Link>
       </div>
 
       <div>
-        <a href="/scales/minor-scale">
+        <Link to="/scales/minor-scale">
           <h3>Minor Scale</h3>
-        </a>
+        </Link>
       </div>
 
       <div>
-        <a href="/scales/pentatonic-scale">
+        <Link to="/scales/pentatonic-scale">
           <h3>Pentatonic Scale</h3>
-        </a>
+        </Link>
       </div>
 
       <div>
-        <a href="/scales/blues-scale">
+        <Link to="/scales/blues-scale">
           <h3>Blues Scale</h3>
-        </a>
+        </Link>
       </div>
     </div>
   );

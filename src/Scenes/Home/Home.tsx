@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -14,14 +16,14 @@ function Home() {
         </p>
         <p className="s2">
           Guitar Wiz is a 100% free service, however if you want to support
-          Guitar Wizard head over to our <a href="/about">About</a> page for
+          Guitar Wizard head over to our <Link to="/about">About</Link> page for
           details.
         </p>
       </div>
 
       <div className="page-grid-wrapper">
         <div className="page-grid-items-wrapper">
-          <a href="/basics" className="page-grid-item-wrapper">
+          <Link to="/basics" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
               style={{ backgroundImage: "url(images/chords.jpg)" }}
@@ -36,8 +38,8 @@ function Home() {
                 <p>Learn the basics of guitar theory.</p>
               </div>
             </div>
-          </a>
-          <a href="/chords" className="page-grid-item-wrapper">
+          </Link>
+          <Link to="/chords" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
               style={{ backgroundImage: "url(images/barre-chord.jpg)" }}
@@ -51,9 +53,9 @@ function Home() {
                 <p>Learn guitar chords with chord sheets and diagrams.</p>
               </div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/chords-in-key" className="page-grid-item-wrapper">
+          <Link to="/chords-in-key" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
               style={{ backgroundImage: "url(images/chords-in-key.jpg)" }}
@@ -71,9 +73,9 @@ function Home() {
                 </p>
               </div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/scales" className="page-grid-item-wrapper">
+          <Link to="/scales" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
               style={{ backgroundImage: "url(images/scales.jpg)" }}
@@ -90,9 +92,9 @@ function Home() {
                 </p>
               </div>
             </div>
-          </a>
+          </Link>
 
-          <a href="/tips" className="page-grid-item-wrapper">
+          <Link to="/tips" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
               style={{ backgroundImage: "url(images/tips.jpg)" }}
@@ -110,8 +112,8 @@ function Home() {
                 </p>
               </div>
             </div>
-          </a>
-          <a href="/about" className="page-grid-item-wrapper">
+          </Link>
+          <Link to="/about" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
               style={{ backgroundImage: "url(images/background-img2.jpg)" }}
@@ -126,7 +128,7 @@ function Home() {
                 <p>About Guitar Wiz.</p>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       <p className="s2" style={{ float: "right" }}>

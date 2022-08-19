@@ -16,7 +16,7 @@ function About() {
           with all your guitarist mates! ;) <br />
           <br />
           If you're interested in programming and web development you can also
-          check out my
+          check out my{" "}
           <a href="https://github.com/RyanButton">GitHub account</a>.<br />
           <br />
           I wish you all the best in your guitar playing journey! -Ryan

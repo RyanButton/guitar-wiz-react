@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function MinorScale() {
   return (
     <div>
@@ -13,8 +15,8 @@ function MinorScale() {
         (Nine Inch Nails) to Sweet Child O' Mine (Guns N' Roses) use the minor
         scale. Like most scales it consists of seven notes. It's Tone/Semitone
         formula is T S T T S T T (see{" "}
-        <a href="basics/chords-intervals">Chords and Intervals</a> for more info
-        on tones and semitones).
+        <Link to="basics/chords-intervals">Chords and Intervals</Link> for more
+        info on tones and semitones).
       </p>
 
       <h2 className="s1">How to play a minor scale</h2>
@@ -58,7 +60,7 @@ function MinorScale() {
       <p className="s2">And WALA! There you have it, the minor scale!</p>
 
       <p className="next">
-        Up next <a href="/scales/pentatonic-scale">Pentatonic scale</a>
+        Up next <Link to="/scales/pentatonic-scale">Pentatonic scale</Link>
       </p>
     </div>
   );
