@@ -32,7 +32,7 @@ export default function InteractiveGuitar({
   });
 
   useEffect(() => {
-    strum();
+    setTimeout(strum, 200);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [strings]);
 
@@ -40,7 +40,7 @@ export default function InteractiveGuitar({
     (chord: number[]) => {
       chord.every((item) => strings.includes(item)) &&
       strings.every((item) => chord.includes(item))
-        ? strum()
+        ? setTimeout(strum, 200)
         : setStrings(chord);
     },
     [strings, strum]
