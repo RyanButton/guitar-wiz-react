@@ -38,8 +38,7 @@ export default function InteractiveGuitar({
     }
 
     setTimeout(strum, 200)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [strings])
+  }, [strings, strum])
 
   const handleChordClick = useCallback(
     (chord: number[]) => {

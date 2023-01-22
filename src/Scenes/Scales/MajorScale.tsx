@@ -17,7 +17,7 @@ function MajorScale() {
         info on tones and semitones).
       </p>
 
-      <h2 className="s1">How to play a major scale</h2>
+      <h2 className="s1">How to play the major scale</h2>
       <p className="s2">
         There are two common ways to play a major scale on a guitar.
         <em>Up the neck</em> and <em>down the neck.</em> These are shown below.

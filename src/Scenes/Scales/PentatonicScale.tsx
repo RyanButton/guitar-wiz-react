@@ -20,7 +20,7 @@ function PentatonicScale() {
         Minor-third - Tone.
       </p>
 
-      <h2 className="s1">How to play a pentatonic scale</h2>
+      <h2 className="s1">How to play the pentatonic scale</h2>
       <p className="s2">
         Like any other scale, there are two common ways to play a pentatonic
         minor scale on a guitar. <em>Up the neck</em> and{' '}
