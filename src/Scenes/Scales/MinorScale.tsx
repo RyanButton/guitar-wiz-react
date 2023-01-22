@@ -19,7 +19,7 @@ function MinorScale() {
         info on tones and semitones).
       </p>
 
-      <h2 className="s1">How to play a minor scale</h2>
+      <h2 className="s1">How to play the minor scale</h2>
       <p className="s2">
         Like the major scale, there are two common ways to play a minor scale on
         a guitar. <em>Up the neck</em> and <em>down the neck.</em> These are
