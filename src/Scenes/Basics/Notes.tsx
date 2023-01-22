@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Notes() {
   return (
@@ -57,7 +57,7 @@ function Notes() {
 
       <img
         className="d1"
-        style={{ maxWidth: "75%", minWidth: "20%" }}
+        style={{ maxWidth: '75%', minWidth: '20%' }}
         src="/images/scales/notes-diagram.png"
         alt="Guitar Diagram"
       />
@@ -76,7 +76,7 @@ function Notes() {
         Up next <Link to="/basics/scales">Scales</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default Notes;
+export default Notes

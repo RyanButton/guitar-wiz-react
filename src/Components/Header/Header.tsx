@@ -1,6 +1,6 @@
-import NavBar from "./NavBar";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import NavBar from './NavBar'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const LogoWrapper = styled.div`
   border-radius: 5px;
@@ -18,7 +18,7 @@ const LogoWrapper = styled.div`
       max-width: 60%;
     }
   }
-`;
+`
 
 function Header() {
   return (
@@ -30,7 +30,7 @@ function Header() {
       </LogoWrapper>
       <NavBar />
     </div>
-  );
+  )
 }
 
-export default Header;
+export default Header

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Tips() {
   return (
@@ -41,7 +41,7 @@ function Tips() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
-export default Tips;
+export default Tips

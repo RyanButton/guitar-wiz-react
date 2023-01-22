@@ -17,10 +17,10 @@ function BluesScale() {
         className="d1"
         src="/images/scales/blues.png"
         alt="Blues scale"
-        style={{ maxWidth: "50%" }}
+        style={{ maxWidth: '50%' }}
       />
     </div>
-  );
+  )
 }
 
-export default BluesScale;
+export default BluesScale

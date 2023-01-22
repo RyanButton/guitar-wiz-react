@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Chords() {
   return (
@@ -20,7 +20,7 @@ function Chords() {
         </Link>
         <p>
           "Open Chords" get their name from the fact that are played close to
-          the nut and have 'open' notes. This is called the open position{" "}
+          the nut and have 'open' notes. This is called the open position{' '}
         </p>
       </div>
       <div>
@@ -50,7 +50,7 @@ function Chords() {
         <p>Chords sheets for all types of chords.</p>
       </div>
     </div>
-  );
+  )
 }
 
-export default Chords;
+export default Chords

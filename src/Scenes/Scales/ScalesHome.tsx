@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Scales() {
   return (
@@ -10,8 +10,8 @@ function Scales() {
           Scales are the back bone of melody within music. Lead guitarist who
           shred licks without even thinking about all know their scales back to
           front. As well as this, you may have already noticed that chord in key
-          follow a scale. For example,{" "}
-          <Link to="/chords-in-key/chords-in-major">chords in major</Link>{" "}
+          follow a scale. For example,{' '}
+          <Link to="/chords-in-key/chords-in-major">chords in major</Link>{' '}
           follow a major scale, and play a chord at every interval of this
           scale.
         </p>
@@ -42,7 +42,7 @@ function Scales() {
         </Link>
       </div>
     </div>
-  );
+  )
 }
 
-export default Scales;
+export default Scales

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Basics() {
   return (
@@ -55,7 +55,7 @@ function Basics() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
-export default Basics;
+export default Basics

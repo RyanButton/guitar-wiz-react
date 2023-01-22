@@ -1,30 +1,30 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header/Header";
-import SideBar from "./Components/SideBar/SideBar";
-import About from "./Scenes/About/About";
-import Home from "./Scenes/Home/Home";
-import Basics from "./Scenes/Basics/Basics";
-import Intro from "./Scenes/Basics/Intro";
-import styled from "styled-components";
-import Notes from "./Scenes/Basics/Notes";
-import Scales from "./Scenes/Basics/Scales";
-import ChordsIntervals from "./Scenes/Basics/ChordIntervals";
-import ChordProgressions from "./Scenes/Basics/ChordProgressions";
-import BarreChords from "./Scenes/Chords/BarreChords";
-import Chords from "./Scenes/Chords/Chords";
-import ChordSheets from "./Scenes/Chords/ChordSheets";
-import OpenChords from "./Scenes/Chords/OpenChords";
-import PowerChords from "./Scenes/Chords/PowerChords";
-import ChordsInKey from "./Scenes/ChordsInKey/ChordsInKey";
-import BluesScale from "./Scenes/Scales/BluesScale";
-import MajorScale from "./Scenes/Scales/MajorScale";
-import MinorScale from "./Scenes/Scales/MinorScale";
-import PentatonicScale from "./Scenes/Scales/PentatonicScale";
-import ExerciseOne from "./Scenes/Tips/ExerciseOne";
-import GettingInTune from "./Scenes/Tips/GettingInTune";
-import Maintenance from "./Scenes/Tips/Maintenance";
-import Tips from "./Scenes/Tips/Tips";
-import ScalesHome from "./Scenes/Scales/ScalesHome";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './Components/Header/Header'
+import SideBar from './Components/SideBar/SideBar'
+import About from './Scenes/About/About'
+import Home from './Scenes/Home/Home'
+import Basics from './Scenes/Basics/Basics'
+import Intro from './Scenes/Basics/Intro'
+import styled from 'styled-components'
+import Notes from './Scenes/Basics/Notes'
+import Scales from './Scenes/Basics/Scales'
+import ChordsIntervals from './Scenes/Basics/ChordIntervals'
+import ChordProgressions from './Scenes/Basics/ChordProgressions'
+import BarreChords from './Scenes/Chords/BarreChords'
+import Chords from './Scenes/Chords/Chords'
+import ChordSheets from './Scenes/Chords/ChordSheets'
+import OpenChords from './Scenes/Chords/OpenChords'
+import PowerChords from './Scenes/Chords/PowerChords'
+import ChordsInKey from './Scenes/ChordsInKey/ChordsInKey'
+import BluesScale from './Scenes/Scales/BluesScale'
+import MajorScale from './Scenes/Scales/MajorScale'
+import MinorScale from './Scenes/Scales/MinorScale'
+import PentatonicScale from './Scenes/Scales/PentatonicScale'
+import ExerciseOne from './Scenes/Tips/ExerciseOne'
+import GettingInTune from './Scenes/Tips/GettingInTune'
+import Maintenance from './Scenes/Tips/Maintenance'
+import Tips from './Scenes/Tips/Tips'
+import ScalesHome from './Scenes/Scales/ScalesHome'
 
 const Container = styled.div`
   margin-left: 5%;
@@ -38,7 +38,7 @@ const Container = styled.div`
     margin-right: 0%;
     font-size: small;
   }
-`;
+`
 
 const SideBarContentWrapper = styled.div`
   margin-top: 15px;
@@ -47,7 +47,7 @@ const SideBarContentWrapper = styled.div`
   @media only screen and (max-width: 1000px) {
     grid-template-columns: 100%;
   }
-`;
+`
 
 const ContentWrapper = styled.div`
   background-color: lightgray;
@@ -65,7 +65,7 @@ const ContentWrapper = styled.div`
     min-width: 94%;
     max-width: 94%;
   }
-`;
+`
 
 function App() {
   return (
@@ -116,7 +116,7 @@ function App() {
         </SideBarContentWrapper>
       </Container>
     </Router>
-  );
+  )
 }
 
-export default App;
+export default App

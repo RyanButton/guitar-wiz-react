@@ -1,17 +1,17 @@
-import React from "react";
-import ChordKeyTable from "../../Components/Tables/ChordKeyTable";
-import InteractiveGuitar from "./Components/InteractiveGuitar";
-import MajorChords from "./MajorChords";
-import { FormControl, InputLabel, Select, MenuItem } from "@mui/material";
-import MinorChords from "./MinorChords";
+import React from 'react'
+import ChordKeyTable from '../../Components/Tables/ChordKeyTable'
+import InteractiveGuitar from './Components/InteractiveGuitar'
+import MajorChords from './MajorChords'
+import { FormControl, InputLabel, Select, MenuItem } from '@mui/material'
+import MinorChords from './MinorChords'
 
-const BUTTON_HEIGHT = "40px";
-const KEY_BUTTON_WIDTH = "100px";
-const TYPE_BUTTON_WIDTH = "100px";
+const BUTTON_HEIGHT = '40px'
+const KEY_BUTTON_WIDTH = '100px'
+const TYPE_BUTTON_WIDTH = '100px'
 
 function ChordsinKey() {
-  const [key, setKey] = React.useState<string>("C");
-  const [keyType, setKeyType] = React.useState<string>("Major");
+  const [key, setKey] = React.useState<string>('C')
+  const [keyType, setKeyType] = React.useState<string>('Major')
 
   return (
     <div>
@@ -28,8 +28,8 @@ function ChordsinKey() {
       <ul>
         <li>
           <b>{keyType} chord sequence:</b>
-          {keyType === "Major" && "Maj Min Min Maj Maj Min Dim"}
-          {keyType === "Minor" && "Min Dim Maj Min Min Maj Maj"}
+          {keyType === 'Major' && 'Maj Min Min Maj Maj Min Dim'}
+          {keyType === 'Minor' && 'Min Dim Maj Min Min Maj Maj'}
         </li>
       </ul>
 
@@ -37,7 +37,7 @@ function ChordsinKey() {
         <InputLabel id="note-label">Key</InputLabel>
         <Select
           style={{
-            textTransform: "none",
+            textTransform: 'none',
             maxWidth: KEY_BUTTON_WIDTH,
             maxHeight: BUTTON_HEIGHT,
             minWidth: KEY_BUTTON_WIDTH,
@@ -49,18 +49,18 @@ function ChordsinKey() {
           label="key"
           onChange={(event) => setKey(event.target.value)}
         >
-          <MenuItem value={"C"}>C</MenuItem>
-          <MenuItem value={"Db"}>C#/Db</MenuItem>
-          <MenuItem value={"D"}>D</MenuItem>
-          <MenuItem value={"Eb"}>D#/Eb</MenuItem>
-          <MenuItem value={"E"}>E</MenuItem>
-          <MenuItem value={"F"}>F</MenuItem>
-          <MenuItem value={"Gb"}>F#/Gb</MenuItem>
-          <MenuItem value={"G"}>G</MenuItem>
-          <MenuItem value={"Ab"}>Ab</MenuItem>
-          <MenuItem value={"A"}>A</MenuItem>
-          <MenuItem value={"Bb"}>A#/Bb</MenuItem>
-          <MenuItem value={"B"}>B</MenuItem>
+          <MenuItem value={'C'}>C</MenuItem>
+          <MenuItem value={'Db'}>C#/Db</MenuItem>
+          <MenuItem value={'D'}>D</MenuItem>
+          <MenuItem value={'Eb'}>D#/Eb</MenuItem>
+          <MenuItem value={'E'}>E</MenuItem>
+          <MenuItem value={'F'}>F</MenuItem>
+          <MenuItem value={'Gb'}>F#/Gb</MenuItem>
+          <MenuItem value={'G'}>G</MenuItem>
+          <MenuItem value={'Ab'}>Ab</MenuItem>
+          <MenuItem value={'A'}>A</MenuItem>
+          <MenuItem value={'Bb'}>A#/Bb</MenuItem>
+          <MenuItem value={'B'}>B</MenuItem>
         </Select>
       </FormControl>
 
@@ -79,23 +79,23 @@ function ChordsinKey() {
           label="type"
           onChange={(event) => setKeyType(event.target.value)}
         >
-          <MenuItem value={"Major"}>Major</MenuItem>
-          <MenuItem value={"Minor"}>Minor</MenuItem>
+          <MenuItem value={'Major'}>Major</MenuItem>
+          <MenuItem value={'Minor'}>Minor</MenuItem>
         </Select>
       </FormControl>
 
-      <div style={{ marginTop: "0.5em" }}>
+      <div style={{ marginTop: '0.5em' }}>
         <ChordKeyTable keyStr={key} keyType={keyType} />
       </div>
 
       <InteractiveGuitar keyStr={key} keyType={keyType} />
 
-      <div style={{ marginBottom: "2em" }}>
-        {keyType === "Major" && <MajorChords keyStr={key} />}
-        {keyType === "Minor" && <MinorChords keyStr={key} />}
+      <div style={{ marginBottom: '2em' }}>
+        {keyType === 'Major' && <MajorChords keyStr={key} />}
+        {keyType === 'Minor' && <MinorChords keyStr={key} />}
       </div>
     </div>
-  );
+  )
 }
 
-export default ChordsinKey;
+export default ChordsinKey

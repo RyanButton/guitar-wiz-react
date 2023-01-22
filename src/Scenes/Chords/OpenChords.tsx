@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function OpenChords() {
   return (
@@ -47,22 +47,22 @@ function OpenChords() {
       <img
         src="/images/chord-diagrams/A.png"
         alt="A Major"
-        style={{ maxWidth: "50%" }}
+        style={{ maxWidth: '50%' }}
       />
       <img
         src="/images/chord-diagrams/D.png"
         alt="D Major"
-        style={{ maxWidth: "50%" }}
+        style={{ maxWidth: '50%' }}
       />
       <img
         src="/images/chord-diagrams/E.png"
         alt="E Major"
-        style={{ maxWidth: "50%" }}
+        style={{ maxWidth: '50%' }}
       />
 
       <p className="s2">
-        Head on over to our <Link to="/chords-in-key">Chords in Key</Link>{" "}
-        section if you want to learn more about chord progressions, or to our{" "}
+        Head on over to our <Link to="/chords-in-key">Chords in Key</Link>{' '}
+        section if you want to learn more about chord progressions, or to our{' '}
         <Link to="/chords/chord-sheets">Chord Sheets</Link> section to learn to
         play more chords.
       </p>
@@ -72,7 +72,7 @@ function OpenChords() {
       </p>
       <br />
     </div>
-  );
+  )
 }
 
-export default OpenChords;
+export default OpenChords

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Intro() {
   return (
@@ -29,7 +29,7 @@ function Intro() {
 
       <img
         className="d1"
-        style={{ maxWidth: "80vw; min-width: 20vw" }}
+        style={{ maxWidth: '80vw; min-width: 20vw' }}
         src="/images/basics/guitar-diagram.jpg"
         alt="Guitar Diagram"
       />
@@ -76,7 +76,7 @@ function Intro() {
         Up next <Link to="/basics/notes">Notes</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default Intro;
+export default Intro

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function MinorScale() {
   return (
@@ -14,7 +14,7 @@ function MinorScale() {
         sounds absolutely beautiful in the right context. Many songs from Hurt
         (Nine Inch Nails) to Sweet Child O' Mine (Guns N' Roses) use the minor
         scale. Like most scales it consists of seven notes. It's Tone/Semitone
-        formula is T S T T S T T (see{" "}
+        formula is T S T T S T T (see{' '}
         <Link to="basics/chords-intervals">Chords and Intervals</Link> for more
         info on tones and semitones).
       </p>
@@ -35,7 +35,7 @@ function MinorScale() {
           className="d1"
           src="/images/scales/minor.png"
           alt="Minor scale"
-          style={{ maxWidth: "50%" }}
+          style={{ maxWidth: '50%' }}
         />
       </p>
 
@@ -48,7 +48,7 @@ function MinorScale() {
           className="d1"
           src="/images/scales/minor-up-neck.png"
           alt="Minor scale (up the neck)"
-          style={{ maxWidth: "70%" }}
+          style={{ maxWidth: '70%' }}
         />
       </p>
 
@@ -63,7 +63,7 @@ function MinorScale() {
         Up next <Link to="/scales/pentatonic-scale">Pentatonic scale</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default MinorScale;
+export default MinorScale

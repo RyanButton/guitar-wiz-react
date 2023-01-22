@@ -59,7 +59,7 @@ function MinorTable() {
       <button onclick="populateTable('Bm');populateProgTable('Bm')">B</button>
     </div>*/}
     </div>
-  );
+  )
 }
 
-export default MinorTable;
+export default MinorTable
