@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function MajorScale() {
   return (
@@ -12,7 +12,7 @@ function MajorScale() {
         The major scale (or Ionian mode) is one of the most popular scales of
         all time. Everything from Twinkle Twinkle Little Star to Darude's
         Sandstorm is played on a major scale. Like most scales it consists of
-        seven notes. It's Tone/Semitone formula is T T S T T T S (see{" "}
+        seven notes. It's Tone/Semitone formula is T T S T T T S (see{' '}
         <Link to="basics/chords-intervals">Chords and Intervals</Link> for more
         info on tones and semitones).
       </p>
@@ -33,7 +33,7 @@ function MajorScale() {
           className="d1"
           src="/images/scales/major.png"
           alt="Major scale"
-          style={{ maxWidth: "50%" }}
+          style={{ maxWidth: '50%' }}
         />
       </p>
 
@@ -46,7 +46,7 @@ function MajorScale() {
           className="d1"
           src="/images/scales/major-up-neck.png"
           alt="Major scale (up the neck)"
-          style={{ maxWidth: "70%" }}
+          style={{ maxWidth: '70%' }}
         />
       </p>
 
@@ -61,7 +61,7 @@ function MajorScale() {
         Up next <Link to="/scales/minor-scale">Minor scale</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default MajorScale;
+export default MajorScale

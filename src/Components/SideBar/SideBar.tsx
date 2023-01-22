@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function SideBar() {
   return (
@@ -75,7 +75,7 @@ function SideBar() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default SideBar;
+export default SideBar

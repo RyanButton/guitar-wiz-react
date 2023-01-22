@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function ExerciseOne() {
   return (
@@ -9,7 +9,7 @@ function ExerciseOne() {
       <p className="s2">
         This warmup is great to do before you start your guitar practice. It
         helps with loosening your fingers and becoming familiar with the fret
-        board. Over time practicing this exercise, you will build{" "}
+        board. Over time practicing this exercise, you will build{' '}
         <em>muscle memory</em>, and play it faster with greater ease.
       </p>
 
@@ -33,7 +33,7 @@ function ExerciseOne() {
         Up next <Link to="/tips/guitar-maintenance">Guitar Maintenance</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default ExerciseOne;
+export default ExerciseOne

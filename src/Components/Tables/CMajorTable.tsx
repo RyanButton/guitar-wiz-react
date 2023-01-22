@@ -24,7 +24,7 @@ function CMajorTable() {
         </table>
       </div>
     </div>
-  );
+  )
 }
 
-export default CMajorTable;
+export default CMajorTable

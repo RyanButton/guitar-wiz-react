@@ -4,7 +4,7 @@ export const chordLookup: Record<string, any> = {
     min: [3, 4, 5, 5, 3, -1],
     dim: [2, 1, -1, 1, 3, -1],
   },
-  "C#": {
+  'C#': {
     maj: [4, 6, 6, 6, 4, -1],
     min: [4, 5, 6, 6, 4, -1],
     dim: [0, 5, 6, 5, 4, -1],
@@ -19,7 +19,7 @@ export const chordLookup: Record<string, any> = {
     min: [1, 3, 2, 0, -1, -1],
     dim: [1, 3, 1, 0, -1, -1],
   },
-  "D#": {
+  'D#': {
     maj: [6, 8, 8, 8, 6, -1],
     min: [6, 7, 8, 8, 6, -1],
     dim: [2, -1, 2, 1, -1, -1],
@@ -30,25 +30,25 @@ export const chordLookup: Record<string, any> = {
     dim: [2, -1, 2, 1, -1, -1],
   },
   E: {
-    root: "E",
+    root: 'E',
     maj: [0, 0, 1, 2, 2, 0],
     min: [0, 0, 0, 2, 2, 0],
     dim: [6, 5, 0, 5, 7, -1],
   },
   F: {
-    root: "F",
+    root: 'F',
     maj: [1, 1, 2, 3, 3, 1],
     min: [1, 1, 1, 3, 3, 1],
     dim: [1, 0, 1, 3, -1, -1],
   },
-  "F#": {
-    root: "F#",
+  'F#': {
+    root: 'F#',
     maj: [2, 2, 3, 4, 4, 2],
     min: [2, 2, 2, 4, 4, 2],
     dim: [2, 1, 2, -1, 0, 2],
   },
   Gb: {
-    root: "Gb",
+    root: 'Gb',
     maj: [2, 2, 3, 4, 4, 2],
     min: [2, 2, 2, 4, 4, 2],
     dim: [2, 1, 2, -1, 0, 2],
@@ -58,7 +58,7 @@ export const chordLookup: Record<string, any> = {
     min: [3, 3, 3, 5, 5, 3],
     dim: [9, 8, 0, 8, 10, -1],
   },
-  "G#": {
+  'G#': {
     maj: [4, 4, 5, 6, 6, 4],
     min: [4, 4, 4, 6, 6, 4],
     dim: [4, 0, 4, 0, 2, 4],
@@ -73,7 +73,7 @@ export const chordLookup: Record<string, any> = {
     min: [0, 1, 2, 2, 0, -1],
     dim: [-1, 1, 2, 1, 0, -1],
   },
-  "A#": {
+  'A#': {
     maj: [1, 3, 3, 3, 1, -1],
     min: [1, 2, 3, 3, 1, -1],
     dim: [0, 2, 3, 2, 1, -1],
@@ -88,4 +88,4 @@ export const chordLookup: Record<string, any> = {
     min: [2, 3, 4, 4, 2, -1],
     dim: [-1, -1, 7, 9, 8, 7],
   },
-};
+}

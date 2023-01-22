@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function PowerChords() {
   return (
@@ -12,7 +12,7 @@ function PowerChords() {
         Power chords, also known as fifth chords, are used frequently in rock
         and heavy metal. They are very simple chords consisting of only two
         notes. Technically speaking, they barely even qualify as chords, as they
-        are only two notes, which is an interval. Are they powerful?{" "}
+        are only two notes, which is an interval. Are they powerful?{' '}
         <em>Hell yes.</em>
         There is something uniquely sleek and 'rocky' about power chords, which
         is why they are used throughout rock and heavy metal so frequently. Lets
@@ -42,7 +42,7 @@ function PowerChords() {
         className="d1"
         src="/images/chords-section/hurricane.png"
         alt="Rock you like a hurricane tab"
-        style={{ maxWidth: "50%" }}
+        style={{ maxWidth: '50%' }}
       />
 
       <p className="s2">
@@ -65,7 +65,7 @@ function PowerChords() {
       </p>
       <br />
     </div>
-  );
+  )
 }
 
-export default PowerChords;
+export default PowerChords

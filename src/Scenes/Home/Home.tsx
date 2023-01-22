@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -26,7 +26,7 @@ function Home() {
           <Link to="/basics" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
-              style={{ backgroundImage: "url(images/chords.jpg)" }}
+              style={{ backgroundImage: 'url(images/chords.jpg)' }}
             ></div>
 
             <div className="page-grid-text-wrapper">
@@ -42,7 +42,7 @@ function Home() {
           <Link to="/chords" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
-              style={{ backgroundImage: "url(images/barre-chord.jpg)" }}
+              style={{ backgroundImage: 'url(images/barre-chord.jpg)' }}
             ></div>
 
             <div className="page-grid-text-wrapper">
@@ -58,7 +58,7 @@ function Home() {
           <Link to="/chords-in-key" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
-              style={{ backgroundImage: "url(images/chords-in-key.jpg)" }}
+              style={{ backgroundImage: 'url(images/chords-in-key.jpg)' }}
             ></div>
 
             <div className="page-grid-text-wrapper">
@@ -78,7 +78,7 @@ function Home() {
           <Link to="/scales" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
-              style={{ backgroundImage: "url(images/scales.jpg)" }}
+              style={{ backgroundImage: 'url(images/scales.jpg)' }}
             ></div>
 
             <div className="page-grid-text-wrapper">
@@ -97,7 +97,7 @@ function Home() {
           <Link to="/tips" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
-              style={{ backgroundImage: "url(images/tips.jpg)" }}
+              style={{ backgroundImage: 'url(images/tips.jpg)' }}
             ></div>
 
             <div className="page-grid-text-wrapper">
@@ -116,7 +116,7 @@ function Home() {
           <Link to="/about" className="page-grid-item-wrapper">
             <div
               className="page-grid-item-img-background"
-              style={{ backgroundImage: "url(images/background-img2.jpg)" }}
+              style={{ backgroundImage: 'url(images/background-img2.jpg)' }}
             ></div>
 
             <div className="page-grid-text-wrapper">
@@ -131,11 +131,11 @@ function Home() {
           </Link>
         </div>
       </div>
-      <p className="s2" style={{ float: "right" }}>
+      <p className="s2" style={{ float: 'right' }}>
         © 2022 Guitar Wiz
       </p>
     </>
-  );
+  )
 }
 
-export default Home;
+export default Home

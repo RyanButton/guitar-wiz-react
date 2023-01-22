@@ -135,7 +135,7 @@ function IntervalTable() {
         </tbody>
       </table>
     </div>
-  );
+  )
 }
 
-export default IntervalTable;
+export default IntervalTable

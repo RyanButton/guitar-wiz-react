@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import IntervalTable from "../../Components/Tables/IntervalTable";
+import { Link } from 'react-router-dom'
+import IntervalTable from '../../Components/Tables/IntervalTable'
 
 function ChordsIntervals() {
   return (
@@ -16,16 +16,16 @@ function ChordsIntervals() {
         such as diminished chords.
       </p>
       <p className="s2">
-        In order to really understand chords, first you will need to learn about{" "}
+        In order to really understand chords, first you will need to learn about{' '}
         <strong>intervals.</strong>
       </p>
 
       <h2 className="s1">Intervals</h2>
       <p className="s2">
         Intervals in music theory can be thought of as the relationship between
-        two notes. You may recall from the <Link to="/notes">notes</Link>{" "}
+        two notes. You may recall from the <Link to="/notes">notes</Link>{' '}
         section the concept of a <em>tone</em> and <em>semitone</em>. Well these
-        are the most commonly spoken about intervals, and are also known as a{" "}
+        are the most commonly spoken about intervals, and are also known as a{' '}
         <em>major second</em> and <em>minor second</em> respectively.
       </p>
       <p className="s2">
@@ -52,7 +52,7 @@ function ChordsIntervals() {
       <p className="s2">
         The major triad consists of three notes of the major scale. Below is a G
         major chord. Notice how it only consists of three notes G, B, and D.
-        These are the 1st, 3rd, and 5th degrees of the{" "}
+        These are the 1st, 3rd, and 5th degrees of the{' '}
         <strong>G major scale</strong>. To learn more about scales, considering
         heading over to our <Link to="/scales">scales page</Link>.
       </p>
@@ -60,7 +60,7 @@ function ChordsIntervals() {
       <img
         src="/images/chord-diagrams/G-with-notes.png"
         alt="G"
-        style={{ maxWidth: "40vw" }}
+        style={{ maxWidth: '40vw' }}
       />
       <p className="s2">
         This concept of a major triad applies to any major scale. For example,
@@ -73,7 +73,7 @@ function ChordsIntervals() {
       <p className="s2">
         Minor triads are identical to major triads in that they are the 1st,
         2nd, and 3rd degrees in the scale. However where they differ is in the
-        <em>scale</em> they are playing. As you can tell, this scale is the{" "}
+        <em>scale</em> they are playing. As you can tell, this scale is the{' '}
         <strong>minor scale</strong>. So to play a G minor chord, play the 1st,
         3rd, and 5th degrees of the G minor scale G, B♭, E.
       </p>
@@ -90,7 +90,7 @@ function ChordsIntervals() {
         Up next <Link to="/basics/chord-progressions">Chord progressions</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default ChordsIntervals;
+export default ChordsIntervals

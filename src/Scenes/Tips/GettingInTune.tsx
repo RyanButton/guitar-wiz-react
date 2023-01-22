@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function GettingInTune() {
   return (
@@ -26,8 +26,8 @@ function GettingInTune() {
       <h2 className="s1">Getting in tune!</h2>
       <p className="s2">
         To get in tune it is recommended that you buy a guitar tuner, although
-        there are many online tuner you can utilize such as{" "}
-        <a href="https://yousician.com/guitartuna">Yousician's Guitar Tuna.</a>{" "}
+        there are many online tuner you can utilize such as{' '}
+        <a href="https://yousician.com/guitartuna">Yousician's Guitar Tuna.</a>{' '}
         Over time and with practice, you will be able to tune your guitar by
         ear, which is great if you don't have a tuner handy.
       </p>
@@ -36,7 +36,7 @@ function GettingInTune() {
         Up next <Link to="/tips/guitar-maintenance">Guitar Maintenance</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default GettingInTune;
+export default GettingInTune

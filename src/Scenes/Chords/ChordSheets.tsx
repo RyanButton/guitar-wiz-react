@@ -2,7 +2,7 @@ function ChordSheets() {
   return (
     <div>
       <h1>Common chords sheet:</h1>
-      <div className="chord-sheet" style={{ backgroundColor: "#c7c3cd" }}>
+      <div className="chord-sheet" style={{ backgroundColor: '#c7c3cd' }}>
         <img src="/images/chord-diagrams/A.png" alt="A" />
         <img src="/images/chord-diagrams/A7.png" alt="A7" />
         <img src="/images/chord-diagrams/Ab.png" alt="Ab" />
@@ -45,7 +45,7 @@ function ChordSheets() {
         <img src="/images/chord-diagrams/Gsm.png" alt="G#m" />
       </div>
     </div>
-  );
+  )
 }
 
-export default ChordSheets;
+export default ChordSheets

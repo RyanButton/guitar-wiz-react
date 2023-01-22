@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const NavBarWrapper = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const NavBarWrapper = styled.div`
   width: fit-content;
   background-color: #c8c3cc;
   border-radius: 5px;
-`;
+`
 
 const NavBarItemWrapper = styled.div`
   display: flex;
@@ -33,7 +33,7 @@ const NavBarItemWrapper = styled.div`
   .lastNavElement {
     border-right: 0px;
   }
-`;
+`
 
 export default function NavBar() {
   return (
@@ -66,5 +66,5 @@ export default function NavBar() {
         <Link to="/about">About</Link>
       </NavBarItemWrapper>
     </NavBarWrapper>
-  );
+  )
 }

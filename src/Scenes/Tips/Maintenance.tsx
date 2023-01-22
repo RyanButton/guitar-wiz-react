@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 function Maintenance() {
   return (
@@ -28,10 +28,10 @@ function Maintenance() {
       </p>
 
       <p className="s2">
-        Below is a tutorial by a popular guitar youtube channel{" "}
+        Below is a tutorial by a popular guitar youtube channel{' '}
         <a href="https://www.youtube.com/channel/UChCj02Oamkp6OO3xgWpOzzA">
           Acoustic Life
-        </a>{" "}
+        </a>{' '}
         on how to change your strings on an acoustic guitar.
       </p>
       <div className="model-box">
@@ -71,7 +71,7 @@ function Maintenance() {
         Up next <Link to="/tips/1234-exercise">1234 exercise</Link>
       </p>
     </div>
-  );
+  )
 }
 
-export default Maintenance;
+export default Maintenance
