@@ -41,7 +41,6 @@ const Container = styled.div`
 `
 
 const SideBarContentWrapper = styled.div`
-  margin-top: 15px;
   display: grid;
   grid-template-columns: 12% 88%;
   @media only screen and (max-width: 1000px) {
@@ -51,7 +50,7 @@ const SideBarContentWrapper = styled.div`
 
 const ContentWrapper = styled.div`
   background-color: lightgray;
-  margin-left: 15px;
+  margin-left: 0.9rem;
   position: relative;
   border-radius: 5px;
   padding-left: 1%;

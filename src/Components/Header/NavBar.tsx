@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const NavBarWrapper = styled.div`
+  margin: 0.2rem 0 0.9rem 0;
   display: flex;
   max-width: 100%;
   text-align: center;
@@ -10,6 +11,9 @@ const NavBarWrapper = styled.div`
   width: fit-content;
   background-color: #c8c3cc;
   border-radius: 5px;
+  @media only screen and (max-width: 1000px) {
+    margin: 0.2rem 0 0.2rem 0;
+  }
 `
 
 const NavBarItemWrapper = styled.div`
