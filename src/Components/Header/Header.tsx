@@ -13,13 +13,15 @@ const LogoWrapper = styled.div`
     text-decoration: none;
     &:hover,
     &:visited,
-    &:active {
+    &:active, 
+    &:focus-visible {
+      outline: none;
       color: #000;
     }
   }
   a > h1 {
     margin 0;
-    font-family: 'New Rocker', cursive;
+    font-family: 'New Rocker';
   }
   img {
     display: block;
