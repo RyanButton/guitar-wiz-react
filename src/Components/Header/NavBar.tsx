@@ -37,6 +37,11 @@ const NavBarItemWrapper = styled.div`
   .lastNavElement {
     border-right: 0px;
   }
+  @media only screen and (max-width: 700px) {
+    & a {
+      font-size: 10px;
+    }
+  }
 `
 
 export default function NavBar() {
